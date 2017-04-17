@@ -1,0 +1,366 @@
+@charset "utf-8";
+/* CSS Document */
+body, p, div, ul, li, dl, dd, dt, h1, h2, h3,h4, table, td, tr, input,span {
+	padding: 0;
+	margin: 0
+}
+body {
+	min-width:320px;
+	margin: 0px auto;
+	padding: 0px;
+	font:400 14px/1.5 helvetica,verdana,san-serif;
+	background: #ecedef;
+	text-align: left
+}
+[data-dpr="2"] body{font-size: 24px;}
+[data-dpr="3"] body{font-size: 36px;}
+a{text-decoration: none; color:#323232;  -webkit-tap-highlight-color:rgba(0,0,0,0); }
+ul,ol,li{list-style: none;}
+i,em{font-style: normal;}
+input,button{font-size: 1em; font-family:Helvetica; outline: none;}
+input[type="button"],button{border:none;}
+select{font-family:Helvetica; }
+input[type="text"],input[type="password"],select,textarea{outline: none;}
+input[type="text"]:focus,input[type="password"]:focus{border-color: #c00;}
+img{max-width: 100%;}
+input{appearance:none; -webkit-appearance:none; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+input::-webkit-input-placeholder{color: #ccc;}
+table {border-collapse:collapse;border-spacing:0}
+.flex-center{display:-webkit-box; display:flex; display:-webkit-flex; -webkit-align-items:center; align-items:center; -webkit-justify-content:center; justify-content:center;}
+.flex-left{display:-webkit-box; display:flex; display:-webkit-flex;-webkit-justify-content:flex-start; justify-content:flex-start;}
+.flex-between{display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-pack:justify; -webkit-justify-content:space-between; -ms-flex-pack:justify; justify-content:space-between;}
+h2,h1,h3{ font-style:normal; font-weight:normal; text-decoration:none;}
+.icotic{ background:url(../images/icotic.png) no-repeat;  
+	display: inline-block;
+  background-size: 320px 320px;
+  vertical-align: middle;}
+.clear{display:block;float:none;clear:both;overflow:hidden;visibility:hidden;width:0;height:0;background:none;border:0;font-size:0}
+.clr:after { content:""; clear:both; visibility:hidden; display:block; font-size:0; height:0; line-height:0;}
+.clr { zoom:1;}
+/*===手机网站首页==*/
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), 
+    url('../font/iconfont.woff') format('woff'), 
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg'); 
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-style:normal !important;font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    /*-webkit-text-stroke-width: 0.2px;*/
+    -moz-osx-font-smoothing: grayscale;}
+.ly_warpper{ max-width:640px; margin:0px auto 20px auto; }
+/* Banner */
+.slideBox{ position:relative; overflow:hidden; margin:0 auto; border-bottom: 1px solid #dcdcdc; }
+.slideBox .hd{ position:absolute; height:15px; line-height:15px; bottom:5px; z-index:1; width: 100%; text-align: right;}
+.slideBox .hd li{ display:inline-block; width:10px; height:10px; -webkit-border-radius:10px; -moz-border-radius:10px; color: #FFF; border-radius:10px; background:#FFF; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+.slideBox .hd li.on{ background:#fc2b26; color: #fc2b26}
+.slideBox .bd{ position:relative; z-index:0; }
+.slideBox .bd li{ position:relative; text-align:center;  }
+.slideBox .bd li img{vertical-align:top; width:100%;}
+.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  
+/* end */
+.ly_count{ height:100px; background:#FFF;}
+.ly_count li{ width:50%; border-bottom: 1px solid #dcdcdc;line-height:49px; float:left}
+.ly_count li p{ padding-left:3%; font-size:14px; border-right: 1px solid #dcdcdc; height:49px; color: #666666 }
+.ly_count li p i{ color:#e43425}
+.ly_count li p.last{ border:none;}
+.ly_navlist{ margin-top:11px;}
+.ly_navlist li{ height:70px; border-top: 1px solid #dedede; background:#FFF;padding: 0px 3%;}
+.ly_navlist li a{ display:block}
+.ly_navlist i{ display:block; float:left; width:40px; height:40px; margin-top:15px;  }
+.ly_navlist i.ico01{ background-position:0px 0px;}
+.ly_navlist i.ico02{ background-position:-42px 0px;}
+.ly_navlist i.ico03{ background-position:-84px 0px;}
+.ly_navlist i.ico04{ background-position:-127px 0px;}
+.ly_navtxt{ width:80%; float:right; vertical-align:middle}
+.ly_navtxt h3{ font-size:16px; line-height:70px; height:70px; overflow:hidden;text-overflow:ellipsis;}
+.ly_navtxt span{ float: right;line-height:70px;  font-size: 20px; color: #cccccc}
+.ly_navtxt a h3{ color:#333333}
+/*======我的账户=====*/
+.ly_head{ height:50px; background:#e84c3d; line-height:50px; padding: 0px 3%; position:relative}
+.ly_head h2{ text-align:center; color:#FFF; font-size:20px;}
+.ly_head span{ float:right; font-size:18px; position:absolute; right:3%; top:0px;}
+.ly_head span a{ color:#FFF;}
+.ly_acount_top{ background:#e84c3d; padding: 16px 0px; border-bottom:  1px solid #c42616; }
+.ly_acount_topimg { width: 35%; margin: auto; border-radius: 50%; border:1px solid #e5e5e5;}
+.ly_acount_topimg img{ width: 100%;}
+.ly_acount_top p{ line-height: 26px; color: #FFF; text-align: center;}
+.ly_rebtxtdiv{padding: 0.5em 3%;background:#fff; border-bottom:1px solid #e6e6e6; }
+.ly_rebtxtdiv p{font-size:14px;  line-height: 1.5em; color:#999999}
+.ly_rebtxtdiv em{font-size: 24px; line-height: 2em; color:#e73825;}
+.ly_reblist{background:#fff;  overflow:hidden; clear:none}
+.ly_reblist li{ font-size:14px;width:46%; float:left; padding:0.5em 0px 0.5em 3%; border-right: 1px solid #e6e6e6; }
+.ly_reblist li p{ line-height: 1.5em; color:#999999}
+.ly_reblist li em{ line-height: 2em; color:#e84c3d}
+.ly_reblist li.last{ border:none;}
+.ly_accountlink{background:#fff; margin-top: 15px;}
+.ly_accountlink li{border-bottom: 1px solid #e6e6e6; height:50px; line-height:50px;padding:0px 3%; font-size:16px}
+.ly_accountlink li a{ display:block; }
+.ly_accountlink li i.msgfont{  font-size: 20px; color: #c2c2c2;margin-right: 8px; }
+.ly_accountlink li.last{ border:none;}
+.ly_accountlink li span i{  float:right; color: #d6d6d6;font-size: 18px;}
+.ly_loadexit{display: block; width: 94%; height: 3em; font-size:1.2em;text-align:center; line-height:3em; color: #fff; border-radius: 5px; background:#e84c3d; margin:1.2em auto  0px auto;}
+/*====我要借款====*/
+.ly_navborrow li{ height:88px;  background:#FFF;padding: 0px 3%;margin-top:11px;}
+.ly_navborrow li a{ display:block}
+.ly_navborrow i{ display:block; float:left; width:49px; line-height: 49px; color: #FFF; text-align: center; font-size: 40px; height:49px; margin-top:20px; border-radius: 50%; overflow: hidden;  }
+.ly_navborrow i.ico01{ background-position:-172px 0px;}
+.ly_navborrow i.ico02{ background: #b3d465;}
+.ly_navborrow i.ico02 em{ margin-left: 8px;}
+.ly_navborrow i.ico03{ background:#13b5b1; font-size: 28px;}
+.ly_navborrow i.ico04{ background:#f8b551;font-size: 30px;}
+.ly_navborrow i.ico05{ background:#8c97cb;font-size: 30px;}
+.ly_navborrowtxt{ width:80%; float:right; }
+.ly_navborrowtxt h3{ font-size:16px; line-height:25px; padding-top: 10px; height: 25px; overflow: hidden;}
+.ly_navborrowtxt p{ font-size:14px; color:#666666; line-height:20px; height:40px; overflow:hidden;text-overflow:ellipsis;}
+.ly_navborrow a h3{ color:#333333}
+.ly_navborrow a  p{ color:#999999;}
+.ly_navborrowtxt  span{ float: right;line-height:88px;   font-size: 20px; color: #cccccc}
+/*=====产品详细资料-信用借款标======*/
+.ly_borrow_more{ background: #FFF; padding: 15px 3%; margin-top: 20px;}
+.ly_borrow_more p{ text-align: right; color: #333333; }
+.ly_borrow_more table{ color: #999999;line-height: 24px;}
+.ly_borrow_more table td{ padding-bottom: 15px;}
+/*====发布借款==*/
+.ly_borrow_wrap{ background: #FFF; margin-top: 20px; padding-bottom: 20px;}
+.ly_borrow_tlt{ line-height: 46px; padding-left: 3%; border-bottom:  1px solid #ecedef; height: 46px; display: block; font-size: 16px; color: #333333}
+.ly_sel_box{ width: 80%;}
+.ly_sel_common{ height: 28px;border:1px solid #dcdcdc; position: relative;line-height: 28px; }
+.ly_sel_common span{ width: 60%; padding-left: 3%; line-height: 28px;   color: #999999; float: left; display: block;}
+.ly_sel_common  i{ text-align: center; background: #eeeeee; height: 28px; width: 28px; border-left:  1px solid #dcdcdc; display: block; float: right;}
+.ly_sel_common  i em{ font-size: 10px; color: #999999}
+.ly_sel_common ul{ position: absolute; left: -1px;width: 100%;  border:1px solid #dcdcdc; background: #FFF; top: 28px; border-radius: 3px; display: none;  }
+.ly_sel_common ul li{ padding:0px  3%; height: 28px; overflow: hidden;}
+.ly_borrow_input{width: 80%;height: 28px;border:1px solid #dcdcdc; }
+.ly_sel_box50{ width: 50%;}
+.ly_borrow_table td{ padding-top: 15px;}
+.ly_borrow_title{ color: #666666; text-align: right; line-height: 30px;}
+.ly_borrow_msg{ color: #999999; line-height: 20px; width: 80%;}
+.ly_borrow_em{ color: #666666; padding-left: 3%;}
+.ly_borrow_selbox{ margin: 20px 3%; background: #f5f5f5;  padding: 5px 0 15px 0;}
+.ly_borrow_selbox h2 span{ width: 16px; height: 16px; line-height: 16px; text-align: center; background: #FFF; border:1px solid #c9c9c9; display: block; float: left; margin-right: 6px;}
+.ly_borrow_selbox h2 span i{ font-size: 16px; color: #e84c3d}
+.ly_borrow_selbox h2{margin-top: 10px; line-height: 16px; font-size: 14px; color: #666666; padding-left: 5%}
+.ly_borrow_inputbox{width: 40%;height: 28px;border:1px solid #dcdcdc; }
+.ly_borrow_inputbox50{width: 50%;height: 28px;border:1px solid #dcdcdc; }
+.ly_setcoinbox{ width: 100%;  display: inline-block; max-width: 110px; float: left; }
+.ly_setcoinbox img{ width: 100%}
+.ly_setcoin{ position: relative; height: 20px; line-height: 20px; border:1px solid #e84c3d; color: #e84c3d; text-align: center;width: 60%; display: inline-block; margin:0px 0px 0px 5%; }
+.ly_setcoin input{ opacity: 0; position:absolute; left:0px; top: 0px;height: 20px; width: 100%; }
+.regular-radio {
+	display: none;
+}
+.regular-radio + label {
+	-webkit-appearance: none;
+	background-color: #FFF;
+	border: 1px solid #c9c9c9;
+
+	padding: 9px;
+	
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.regular-radio:checked + label:after {
+	content: ' ';
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 3px;
+	background: #e73825;
+
+	text-shadow: 0px;
+	left: 3px;
+
+}
+.regular-radio:checked + label {
+	background-color: #e73825;
+
+	border: 1px solid #e73825;
+	}
+.ly-regbox-ibox{ padding-left: 8%; color: #666666}
+.ly-regbox-ibox i{ display: inline-block; width: 40%; text-align: right;}
+.ly_txt_info{ line-height: 22px;  color: #666666; padding: 3%;}
+.ly-regbox-iboxwrap{padding:8px 3% 0px 3%;color: #666666}
+.ly_borrow_inputtxtdis{width: 15%;height: 28px;border:1px solid #dcdcdc; padding-left: 3%; }
+.ly_loadexitbox{display: block; width: 44%; height: 2.5em; font-size:1.2em;text-align:center; line-height:2.5em; color: #fff; border-radius: 5px; background:#e84c3d; margin:1.2em auto  0px auto;}
+/*====我要理财======*/
+.ly_myWarp{ height:36px; background:#FFF;border-radius:5px;px;border:1px solid #dcdcdc; line-height:36px; margin: 30px 3% 0px 3%; }
+.ly_myWarp i{ width:25px; height:13px; float:right; font-size: 18px; color: #999999}
+.ly_myWarp p{ width:90%; float:left; height:18px; padding-top:9px; line-height:18px;}
+.ly_myWarp input{line-height:18px; font-size:15px; color:#999999;  background:none; border: none; width:95%; padding-left: 5%;}
+.ly_myselbox{margin-top: 20px ;  border: 1px solid #e84c3d; background:#FFF; text-align:center; line-height:36px; height:36px;}
+.ly_myselbox li{ width:24.5%; float:left; border-right: 1px solid #e73825; color: #666666}
+.ly_myselbox li.last{ border-right: none; width:25%}
+.ly_myselbox li.myselshow{ background:#e84c3d; color:#FFF;}
+.ly_myselbox i{ background-position: 0px -50px; width:7px; height:10px; display:inline-block; margin-top:-2px;  margin-left:5px;}
+.ly_myselbox i.fast{ background-position: -8px -50px; }
+.ly_myselbox i.second{ background-position: -16px -50px;}
+.ly_zb_list li{ margin-top:10px;background:#FFF; padding: 0px 3% 10px 3%; position:relative ; z-index:0}
+.ly_zb_list h1{ height:20px; overflow:hidden; padding-top:14px; font-size:16px; line-height: 20px;}
+.ly_zb_list a h1{ color:#333333}
+.ly_zb_list a h1 i{ height:20px; width:20px; float:left;   overflow:hidden;margin-right:6px;}
+.ly_zb_list a h1 i img{ width: 100%;}
+.ly_zb_h10{ margin-top:10px;}
+.ly_zb_main{ line-height:30px; height:30px; overflow:hidden;}
+.ly_zb_left{width:55%; float:left; font-size:13px; color:#666666}
+.ly_zb_left em{ font-size:18px;}
+.ly_zb_right{width:45%; float:left; font-size:13px; color:#666666}
+.ly_zb_right em{ color: #999999}
+.ly_zb_tlt{ width:26%; float:left;color:#666666}
+.ly_zb_on{width:40%; float:left;color: #999999}
+.ly_zb_on span{ background:#dddddd; display:block; width:100%; height:6px; border-radius:3px; margin-top:12px;}
+.ly_zb_on span i{display:block;  height:6px; border-radius:3px; background: #e84c3d}
+.ly_zb_num{ width:17%; float:left; padding-left: 2%}
+.ly_post{ position:absolute; bottom:15px; right:3%; width:82px; height:28px;color:#FFF; text-align: center;  line-height:28px; background: #e84c3d; border-radius: 3px; }
+.ly_color_reb{ color: #ff5258}
+.ly_zb_right em.ly_color_reb{ font-size: 18px; color: #ff5258}
+/*======借款标详情=======*/
+.ly_jhbmore{background:#FFF; padding: 0px 3% 10px 3%;}
+.ly_jhbmore h1{ height:20px; overflow:hidden; padding-top:14px; font-size:16px; line-height: 20px;}
+.ly_jhbmore  h1{ color:#333333}
+.ly_jhbmore h1 i{ height:20px; width:20px; float:left;   overflow:hidden;margin-right:6px;}
+.ly_jhbmore h1 i img{ width: 100%;}
+.ly_jhbmore h1 span{ float: right; color: #999999; font-size: 14px;}
+.ly_borrowtime{ height:40px;  background:#FFF;  margin-top:10px; line-height:40px; font-size:14px; color:#999999; padding: 0px 3%;}
+.ly_borrowtime em{ font-size:18px; color:#ff5258;}
+.ly_borrowtime i{  width:23px; height:23px; font-size: 23px;  color:#ff5258; padding-right: 5px; }
+.ly_borrowWrap{   background:#FFF; border-radius: 3px; margin-top:10px; padding: 5px 3% 10px 3%; }
+.ly_borrowtxt{ line-height:28px; font-size:14px; color:#999999;}
+.ly_borrowtxt em{ font-size:16px; color:#e84c3d;}
+.ly_borrowWrap dl{ height:25px; margin-top:9px;}
+.ly_borrowWrap dl .ly_borrowName{ width:25%; float:left;font-size:14px; color:#999999; line-height:25px;}
+.ly_borrowinput{ width:45%; float:left}
+.ly_borrowinput input{ width:98%; height:23px; border: 1px solid #dcdcdc; }
+.ly_borrowNametxt{width:5%; float:left;font-size:14px; color:#999999; line-height:25px;}
+.ly_borrowWrap a{ background:#e84c3d; height:33px; border-radius: 3px; text-align:center; display:block; line-height:33px; font-size:16px; color:#FFF; margin-top:12px;}
+.ly_borrowbox{ height:38px; background:#FFF;border-bottom: 1px solid #dcdcdc;  margin-top:10px; padding: 0px 3%; }
+.ly_borrowbox h1{ font-size:16px; line-height:38px; color:#333333;}
+.ly_borrowbox span{  font-size: 18px; line-height: 38px; color: #6d6d6d;   float:right}
+.ly_borrowbox span.ly_borrowup{display: none;}
+.ly_Errorbox{ display: none;}
+.ly_Errorbox h1{ font-size:15px; color:#333; margin:8px 0 5px 0;}
+.ly_Errorbox p{ margin-top:5px; clear:both}
+.ly_Errorbox{background:#FFF;padding: 8px 3%;font-size:14px; color:#666666; line-height:23px; }
+.ly_Errorbox em{ color:#999999;}
+.ly_Errorbox li{ border-bottom: 1px dotted #dcdcdc; line-height:32px; height:32px;}
+.ly_Errorbox li a{  color:#ff5258}
+.ly_Errorbox li.ly_last{ border:none}
+.ly_Errorbox i{ color:#ff5258}
+.ly_zqturnwrap{ height:40px;   line-height:40px; font-size: 12px;  color:#999999;}
+.ly_zqturnwrap em{ color:#ff5258;}
+.ly_zqturnwrap i{ font-size: 18px;  color:#ff5258; padding-right: 5px; }
+.ly_turntxt{ color: #666666}
+.ly_turntxt em{ color:#999999;}
+.ly_zqturnwrapbox{ height:30px;   line-height:30px; font-size: 14px;  color:#999999;}
+.ly_zqturnwrapbox em{ color:#ff5258; font-size: 18px;}
+.ly_zqturnwrapbox i{ font-size: 18px;  color:#ff5258; padding-right: 5px; }
+/*=====安全设置====*/
+.ly_setmain{ padding: 10px 3% 0 3%;}
+.ly_setiphone{ height:39px; background:#FFF; border-bottom: 1px solid #dcdcdc; font-size:15px; padding: 0px 2%; line-height:39px; color:#333333}
+.ly_setiphone i{ color:#3ab46e; padding-left:16px;}
+.ly_setiphone em{ color:#999999; padding-left:16px;}
+.ly_setiphone a{ float:right; color:#ff5258}
+.ly_setiphoneWrap{height:128px;}
+.ly_setiphoneMain{  background:#FFF;  padding-top:8px;}
+.ly_setiphoneMain dl{ height:29px; line-height:29px; margin-top:9px; }
+.ly_setlt{ width:36%; float:left; color:#666666; font-size:13px; text-align:right }
+.ly_setinput{width:36%; float:left; overflow:hidden }
+.ly_setinput input{ height:27px;border: 1px solid #dcdcdc; width:98%}
+.ly_setsubmit{ width:24%; float:right; margin-right: 2% }
+.ly_setsubmit a{ width: 100%;  color:#e84c3d; border:1px solid #e84c3d; text-align:center; line-height:27px; height:27px;display:block; text-align:center; font-size:13px;}
+.ly_setinput a{ background:#ff5258; color:#FFF; text-align:center; line-height:30px; height:30px;display:block; text-align:center; font-size:16px; width:80%; border-radius:5px;}
+.ly_setemail{ width:55%; float:left}
+.ly_setemail input{ height:27px;border: 1px solid #dcdcdc; width:98%}
+.ly_setemailWrap{ height:102px;}
+.ly_setpasswordWrap{ height:136px;}
+.ly_setWrap{ padding-bottom:10px !important;}
+/*=====充值===*/
+.ly_topupMain{ padding: 10px 3% ; background: #FFF;}
+.ly_topupMain p{ line-height:28px; font-size:16px; color:#666666; margin-top:10px;}
+.ly_topupMain p i{ color:#999999}
+.ly_topupMain p.ly_topuptlt{ width:45%; float:left; line-height:30px;}
+.ly_topupMain p.ly_topupsel{ width:30%; float:left; line-height:30px;}
+.ly_topupMain dl{ clear:both}
+.ly_topupMain dl input{ float:left; width:37%; padding-left: 3%; height:28px;line-height:28px; border: 1px solid #dcdcdc; margin-top:10px; }
+.ly_topuptxt{ width:5%; float:left; padding-left:7px;}
+.ly_topupSet{ width:70%; float:left}
+.ly_topupSet span{ position: relative; width:70px; height:23px; line-height:23px; text-align:center; font-size:15px; color:#666666; display:block; float:left; border: 1px solid #d2d2d2; }
+.ly_topupSet span.ly_topupSelect{  height:25px; color:#ff5258; border: 1px solid #ff5258; }
+.ly_topupSet span.last{ margin-left:15px;}
+.ly_topupSet span.ly_topupSelect i{ display: block;}
+.ly_topupSet span i{ background-position: -28px -50px; width: 16px; height: 14px; position: absolute; right: 0px; bottom: 0px; display: none;}
+.ly_topupWarp{ background:#f5f5f5; padding: 3px 5% 25px 5%; margin-top:10px;}
+.ly_topupWarp li{ width:45%; float:left; margin-top:9px;}
+.ly_topupWarp li img{ width:100% ; border: 1px solid #dcdcdc;}
+.ly_topupWarp li.last{ float:right}
+.ly_topupWarp li img.ly_topupShow{ border: 1px solid #ff5258;}
+/*=====交易记录=====*/
+.ly_sel_box40{ width: 36%; float: left;}
+.ly_switchtab{ height:30px;padding: 10px 3%; background: #FFF;}
+.ly_switchtime{ width:26%;margin-left: 2%; float:left;  overflow:hidden}
+.ly_switchtime input{font-size:13px; color:#999999; text-align:center; border: 1px solid #dcdcdc; background:#FFF; height:28px; line-height:28px; width:97%;}
+.ly_switchline{ height:13px; border-bottom: 1px solid #a0a0a0; width:4%; float:left; margin: 0px 0 0 6px;}
+.ly_switchWrap li{background:#FFF;  padding: 5px 3%;  line-height:24px; margin-top:10px;}
+.ly_switchWrap i{ color:#ff5258; float: right;  }
+.ly_switchWrap p em{ color: #999;}
+.ly_switchWrap p{ color:#666666}
+.ly_switchWrap p span{ padding-left:20px;}
+/*=====提现=====*/
+.ly_topMainup input{  width:45% !important; color:#999999; font-size:13px;   }
+.ly_topupMain em.redboxmin{ color: #ff5258}
+.ly_drawalMainup input{  width:55% !important; color:#999999; font-size:13px;  }
+.ly_drawalWarp{background:#FFF; border: 1px solid #dcdcdc;   padding: 0px 3%; }
+.ly_drawalWarp p{ line-height:22px; font-size:13px; color:#999999; }
+.ly_drawalWarpreg{background:#fff1f2;  padding: 3% ;  border-radius:5px; margin-top: 10px;}
+.ly_drawalWarpreg p{ line-height:22px; font-size:13px; color:#666666; }
+.ly_sel_box60{ width: 45%; margin-top: 10px; float: left;}
+/*====完善资料===*/
+.ly_PerfectMain{padding: 0 3% 10px 3%; background: #FFF;}
+.ly_PerfectMain dl{ padding-top:10px; height:28px;}
+.ly_perfectleft{ width:30%; float:left; line-height:28px; font-size:14px; color:#666666; text-align: right;}
+.ly_perfectleft i{ color:#ff5258}
+.ly_perfectRight{ width:70%; float:right}
+.ly_sel_box80{width:70%;}
+.ly_perfectName{ width:65%; height:26px; background:#FFF; border: 1px solid #dcdcdc; line-height:26px; padding-left:5%; font-size:13px; color:#999999}
+.ly_perfectSel{ width:40% !important; padding-left:5%; text-align:left !important; float:left; }
+.ly_margin{ margin-left:8px;}
+.ly_perfectiphone{ width:55%; height:26px; background:#FFF; border: 1px solid #dcdcdc; line-height:26px; padding-left:5%; font-size:13px; color:#999999; float:left}
+.ly_perfectCopy{ width:35%; height:26px; float:right;  text-align:center; line-height:26px; border:1px solid  #e84c3d; color:#e84c3d;}
+.ly_perfectNamebox{ width: 90%;}
+.ly_sel_box45{ width: 47%; float: left; margin-right: 2%;}
+/*=====银行卡管理====*/
+.ly_bankMain{padding: 0px 3% 10px 3%;}
+.ly_bankWrap{ background:#FFF;  border: 1px solid #dcdcdc;    padding:13px 0px;}
+.ly_bankWrap dl{ margin-bottom:8px; height:29px;}
+.ly_bankName{ width:30%; float:left; font-size:15px; line-height:29px; text-align:right; color:#666666}
+.ly_bankinput{width:70%; float:left}
+.ly_bankinput input{width:90%; height:27px; background:#FFF; border: 1px solid #dcdcdc; line-height:27px; padding-left:5%; font-size:13px; color:#666}
+.ly_bankWrap a{ width:33%; margin:12px 0 0 30%; height:32px; background:#ff5258; display:block; text-align:center; font-size:16px; color:#FFF; line-height:32px; border-radius: 5px;}
+.ly_bankadd{ line-height:50px; font-size:16px; color:#333333;}
+.ly_bankadd i{  font-size: 24px; color: #e84c3d; margin-right: 5px;}
+.ly_sel_box100{ width: 66%; float: left;}
+/*====注册=====*/
+.ly_reg{padding: 0 3%;}
+.ly_regbox{ background: #FFF; padding: 10px 0px; margin-top: 10px;}
+.ly_reg li{margin-top:10px;}
+.ly_regdivbox{ height:38px; border-radius:5px; background:#fff; border: 1px solid #dcdcdc; }
+.ly_reg li i.ly_userico{ width: 37px; height: 38px; font-size: 18px; line-height: 38px; text-align: center; color: #c2c2c2 ; display: block; float: left;  }
+.ly_reg li .ly_usertxt{ width:70%; float:left; border-left: 1px solid #a0a0a0; height:18px; margin-top:10px;}
+.ly_reg li .ly_usertxt input{ width:95%; float:right; height:18px; font-size:13px; color:#999999; border:none;}
+.ly_reg li .ly_regdown{ margin: 0px 8px 0 0; font-size: 18px; float: right; line-height: 38px; color: #d5d5d5}
+.ly_reg_copy{ width: 65%; float: left;}
+.ly_reg_rightcopy{ width:32%; float:right; }
+.ly_reg_rightcopy img{ vertical-align: middle; max-height: 40px;}
+.ly_regbntmit{ background:#ff5258;height:45px; border-radius:5px;  margin:10px auto; line-height:45px; text-align:center;color:#ffffff; font-size:16px; clear:both; width:94%; display:block}
+.ly_reg li .ly_usertxtbox{ border:none;}
+.ly_reg_tel{ width: 50%; float: left;}
+.clickcopy{ line-height: 40px; color: #0073cb; width: 45%; float: right; display: block;}
+.spanright{ float: right; color: #666666; margin-right: 3%; line-height: 28px; display: block;}
+.spanright a{ color: #0073cb}
+.spanright a.blockdiv{ color: #666666}
+.ly_errorbox{ line-height: 22px; font-size: 13px; color: #666666; padding-left: 5%; margin-left: 28px;}

@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>汇票通</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+<script type="text/javascript" src="js/tab_center.js"></script>
+<script type="text/javascript">    
+    $(".probar100").map(function(){
+        var num=$(this).attr("probar"),
+            timeid;
+        var str="probar100_",
+            i=0;
+            var that=$(this);
+        timeid=setInterval(function(){
+            if(i<=num){
+                that.attr("class","probar100 "+str+i);
+                that.text(i+"%");
+                i++;
+            }else{
+                clearInterval(timeid);
+            }
+        },8);
+    });
+</script>
+<script type="text/javascript"> 
+    $(function(){ 
+        var str="{background-position:", 
+        width=101; 
+        for(var i=0;i<=100;i++){ 
+            var text=$(".probar").html();  
+            $(".probar").html(text+"<br/>"+".probar100_"+i+str+"-"+width*i+"px "+"0px;}"); 
+        } 
+    }); 
+</script>
+</head>
+
+<body>
+<!--      top         -->
+<div class="l_top">
+    <div class="l_top_box">
+        <div class="l_center clearfix">
+            <div class="fr clearfix">
+                <!--登录前-->
+                <ul class="l_itop clearfix">
+                    <li class="l_bg l_itop_sweibo"></li>
+                    <li class="l_bg l_itop_wechat"></li>
+                    <li class="l_bg l_itop_qq"></li>
+                </ul>
+                <div class="l_top_info clearfix">
+                    <a href="登录.html" class="l_top_infotxt l_top_gtxt">登&nbsp;录</a>
+                    <a href="注册.html" class="l_top_infotxt l_top_btxt">注&nbsp;册</a>
+                </div>
+                <!--登录前 end-->
+                <!--登录后-->
+                <!--
+                <ul class="l_alogin clearfix">
+                    <li class="clearfix bl_none">
+                        <span class="l_alogin_txt">18686868686</span>
+                        <span class="l_alogin_icon"></span>
+                    </li>
+                    <li class="clearfix">
+                        <a href="#" title="" target="">
+                            <span class="l_alogin_txt">帮&nbsp;助</span>
+                            <span class="l_alogin_icon"></span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="#" title="" target="">
+                            <span class="l_alogin_txt">论&nbsp;坛</span>
+                            <span class="l_alogin_icon"></span>
+                        </a>
+                    </li>
+                </ul>
+                -->
+                <!--登录后 end-->
+            </div>
+        </div>
+    </div>
+    <!--nav-->
+    <div class="l_navbg">
+        <div class="l_center clearfix">
+            <div class="l_logo">
+                <a href="index.html" title="汇票通" target=""><img src="images/logo.png" alt="" title=""></a>
+            </div>
+            <ul class="l_nav_title clearfix">
+                <li><a href="index.html" title="" target="" class="curnav">首&nbsp;&nbsp;页</a></li>
+                <li><a href="产品介绍.html" title="" target="">产品介绍</a></li>
+                <li><a href="我的投资.html" title="" target="">汇银票</a></li>
+                <li><a href="我有票据.html" title="" target="">我有票据</a></li>
+                <li><a href="债权转让.html" title="" target="">债权转让</a></li>
+                <li><a href="关于我们.html" title="" target="">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--nav end-->
+</div>
+<!--      top   end      -->
+<!--      content          -->
+<div class="l_main">
+    <!-- banner-->
+    <div class="cle"></div>
+    <div class="banner" style="overflow:hidden;">
+        <div id="container">
+            <div id="example">
+                <div id="slides">
+                    <div class="slides_container">
+                        <div class="prolist"><a href="#"><img src="images/banner.png" width="1920" height="520" /></a> </div>
+                        <div class="prolist"><a href="#"><img src="images/banner2.png" width="1920" height="520" /></a> </div>
+                        <div class="prolist"><a href="#"><img src="images/banner.png" width="1920" height="520" /></a> </div>
+                    </div>
+                    <div class="arrowbox">
+                        <a href="#" class="prev"><img src="images/prev_btn.png" width="24" height="32" alt="" title="" /></a> 
+                        <a href="#" class="next"><img src="images/next_btn.png" width="24" height="32" alt="" title="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cle"></div>
+    <!--banner end-->
+    <!--banner图 Js-->
+    <script type="text/javascript">
+        $(function(){
+            //banner
+                $('#slides').slides({
+                    preload: true,
+                    preloadImage: 'images/loading.gif',
+                    play: 3000,
+                    pause: 2000,
+                    hoverPause: true
+                });
+            //end
+        })
+    /*上一个下一个按钮，不要的话注释掉中间的即可 begin*/
+    $(".slides_container").hover(function(){
+        $(".prev,.next").fadeTo("show",1);
+    },function(){
+        $(".prev,.next").hide();
+    })
+    //鼠标移过某个按钮 高亮显示
+    $(".prev,.next").hover(function(){
+        $(this).fadeTo("show",1);
+    },function(){
+        $(this).fadeTo("show",1);
+    })
+    /*上一个下一个按钮，不要的话注释掉中间的即可 end*/
+    </script>   
+    <!--introduce-->
+    <div class="l_introduce">
+    	<ul class="l_center l_intruduce_area clearfix">
+        	<li class="l_introduce1">
+            	<div class="l_pintroduce1"></div>
+                <h2>票据托管</h2>
+                <p>为客户提供票据保管和信息查询代为保管票据</p>
+            </li>
+            <li class="l_introduce2">
+            	<div class="l_pintroduce2"></div>
+                <h2>资金托管</h2>
+                <p>与委托人签订委托资产托管合同安全保管委托投资的资产</p>
+            </li>
+            <li class="l_introduce3">
+            	<div class="l_pintroduce3"></div>
+                <h2>1元即可理财</h2>
+                <p>投资小,回报率高,投资理财</p>
+                <p>当天投资,次日即可返利</p>
+            </li>
+            <li class="l_introduce4">
+            	<div class="l_pintroduce4"></div>
+                <h2>信息加密</h2>
+                <p>对敏感信息进行安全加密</p>
+                <p>可以设置点对点的单独密码</p>
+            </li>
+            <li class="l_introduce5">
+            	<div class="l_pintroduce5"></div>
+                <h2>自动投标</h2>
+                <p>符合相应条件的借款出现将由程序自动完成投标</p>
+            </li>
+        </ul>
+    </div>
+    <!--introduxe end-->
+    <!--recommand-->
+    <div class="l_product_rrecommand">
+        <div class="l_precommand">
+            <div class="l_precommandbt">
+                <img src="images/product_recommandbt.png" alt="" usemap="#Map" title="" border="0">
+                <map name="Map" id="Map">
+                  <area shape="poly" coords="1290,39" href="#" />
+                  <area shape="poly" coords="1298,37" href="#" />
+                  <area shape="rect" coords="1298,35,1378,56" href="#" />
+                </map>
+          </div>
+        </div>
+        <div class="l_precommand_content">
+            <!---->
+            <div class="btnMode" id="slider">    
+                <a href="javascript:void(0);" class="prev2 btn" ></a>
+                <div class="scroll">    
+                    <ul class="scrollContainer">
+                        <li class="panel" id="panel_1">
+                            <a href="#" class="inside" target="" title="">
+                                <p class="l_pdate">第三百六十二期</p>
+                                <p class="l_p2_title">融资金额</p>
+                                <p class="l_p2_sum">
+                                    <span class="f16 l_pgtxt">￥</span>
+                                    <span class="f4 l_pgtxt">30,000</span>
+                                </p>
+                                <p class="l_p2_txt">无条件承兑银行:  XXXXXXX行</p>
+                                <p class="l_p3_nhsysum l_pgtxt">0</p>
+                                <p class="l_p3_nhsytitle">年化收益</p>
+                                <p class="l_p3_btns clearfix">
+                                    <input type="button" class="w60"  value="1元起投">
+                                    <input type="button" class="w116" value="购买成功即刻计息">
+                                    <span class="clear"></span>
+                                </p>
+                                <p class="l_p3_day">
+                                    <span class="f36 l_pgtxt">15</span>
+                                    <span>/天</span>
+                                </p>
+                                <p class="l_p3_daytitle">投资周期</p>
+                                <p class="l_circles">
+                                    <span class="probar100 probar100_0" probar="0"><span class="l_pgtxt">0%</span></span>
+                                    <span class="probar" style="display:none;"></span>
+                                </p>
+                                <p class="l_jjfs">
+                                    <span>01时01分01秒<br />即将发售</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="panel" id="panel_2">
+                            <a href="#" class="inside" target="" title="">
+                                <p class="l_pdate">第三百六十一期</p>
+                                <p class="l_p2_title">融资金额</p>
+                                <p class="l_p2_sum">
+                                    <span class="f16 l_pbluetxt">￥</span>
+                                    <span class="f4 l_pbluetxt">30,000</span>
+                                </p>
+                                <p class="l_p2_txt">无条件承兑银行:  XXXXXXX行: </p>
+                                <p class="l_p3_nhsysum l_pbluetxt">10%</p>
+                                <p class="l_p3_nhsytitle">年化收益</p>
+                                <p class="l_p3_btns clearfix">
+                                    <input type="button" class="w60" value="1元起投">
+                                    <input type="button" class="116" value="购买成功即刻计息">
+                                    <span class="clear"></span>
+                                </p>
+                                <p class="l_p3_day">
+                                    <span class="f36 l_pbluetxt">15</span>
+                                    <span>/天</span>
+                                </p>
+                                <p class="l_p3_daytitle">投资周期</p>
+                                <p class="l_circles">
+                                    <span class="probar100 probar100_65" probar="65"><span class="l_pbluetxt">65%</span></span>
+                                    <span class="probar" style="display:none;"></span>
+                                </p>
+                                <p  class="l_ljqgbtn">
+                                    <input type="button" value="立即抢购">
+                                </p>
+
+                            </a>
+                        </li>
+                        <li class="panel current" id="panel_3">
+                            <a href="#" class="inside" target="" title="">
+                                
+                                <p class="l_pdate">第三百六十期</p>
+                                <p class="l_p2_title">融资金额</p>
+                                <p class="l_p2_sum">
+                                    <span class="f16 l_pbtxt">￥</span>
+                                    <span class="f4 l_pbtxt">30,000</span>
+                                </p>
+                                <p class="l_p2_txt">无条件承兑银行:  XXXXXXX行</p>
+                                <p class="l_p3_nhsysum l_pbtxt">100%</p>
+                                <p class="l_p3_nhsytitle">年化收益</p>
+                                <p class="l_p3_btns clearfix">
+                                    <input type="button" class="w60" value="1元起投">
+                                    <input type="button" class="w116" value="购买成功即刻计息">
+                                    <span class="clear"></span>
+                                </p>
+                                <p class="l_p3_day">
+                                    <span class="f36 l_pbtxt">15</span>
+                                    <span>/天</span>
+                                </p>
+                                <p class="l_p3_daytitle">投资周期</p>
+                                <p class="l_circles">
+                                    <span class="probar100 probar100_100" probar="100"><span class="l_pbtxt">100%</span></span>
+                                    <span class="probar" style="display:none;"></span>
+                                </p>
+                                <p class="l_sq"></p>                
+                            </a>
+                        </li>
+                        <li class="panel" id="panel_4">
+                            <a href="#" class="inside" target="" title="">
+                                <p class="l_pdate">第三百六十二期</p>
+                                <p class="l_p2_title">融资金额</p>
+                                <p class="l_p2_sum">
+                                    <span class="f16 l_pgtxt">￥</span>
+                                    <span class="f4 l_pgtxt">30,000</span>
+                                </p>
+                                <p class="l_p2_txt">无条件承兑银行:  XXXXXXX行</p>
+                                <p class="l_p3_nhsysum l_pgtxt">0</p>
+                                <p class="l_p3_nhsytitle">年化收益</p>
+                                <p class="l_p3_btns clearfix">
+                                    <input type="button" class="w60"  value="1元起投">
+                                    <input type="button" class="w116" value="购买成功即刻计息">
+                                    <span class="clear"></span>
+                                </p>
+                                <p class="l_p3_day">
+                                    <span class="f36 l_pgtxt">15</span>
+                                    <span>/天</span>
+                                </p>
+                                <p class="l_p3_daytitle">投资周期</p>
+                                <p class="l_circles">
+                                    <span class="probar100 probar100_0" probar="0"><span class="l_pgtxt">0%</span></span>
+                                    <span class="probar" style="display:none;"></span>
+                                </p>
+                                <p class="l_jjfs">
+                                    <span>01时01分01秒<br />即将发售</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="next2 btn"></a>     
+            </div>
+            <!---->
+        </div>
+    </div>
+    <!--recommand end-->
+    <!--advertisement-->
+    <div class="l_advertisement">
+        <div class="l_advertisement_area">
+            <!--登录前-->
+            <a href="" title="" target=""><img src="images/advertisement.png" title="" alt=""></a>
+            <!--登录前 end-->
+            <!--登录后-->
+            <!-- <a href="" title="" target=""><img src="images/advertisement2.png" title="" alt=""></a> -->
+            <!--登录后 end-->
+        </div>
+    </div>
+    <!--advertisement end-->
+    <!--news-->
+    <div class="l_news">
+        <div class="l_center">
+            <div class="l_xwdt">
+                <h1>新闻动态&nbsp;&gt;</h1>
+                <ul class="l_xwdt_area">
+                    <li>
+                        <a href="#" title="" target="" class="clearfix">
+                            <span class="l_lnews">◆&nbsp;投资快人一步 融资财富无限</span>
+                            <span class="l_rdate">2014-12-12</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" target="" class="clearfix">
+                            <span class="l_lnews">◆&nbsp;投资快人一步文字标题文字标题 融资财富无限 </span>
+                            <span class="l_rdate">2014-12-12</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" target="" class="clearfix">
+                            <span class="l_lnews">◆&nbsp;投资快人一步 文字标题 文字标题 融资财富无限 文字标题  </span>
+                            <span class="l_rdate">2014-12-12</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="l_xwdt">
+                <h1>网站公告&nbsp;&gt;</h1>
+                <ul class="l_xwdt_area">
+                    <li>
+                        <a href="#" title="" target="" class="clearfix">
+                            <span class="l_lnews">◆&nbsp;投资快人一步 融资财富无限</span>
+                            <span class="l_rdate">2014-12-12</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" target="" class="clearfix">
+                            <span class="l_lnews">◆&nbsp;投资快人一步文字标题文字标题 融资财富无限 </span>
+                            <span class="l_rdate">2014-12-12</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" target="" class="clearfix">
+                            <span class="l_lnews">◆&nbsp;投资快人一步 文字标题 文字标题 融资财富无限 文字标题  </span>
+                            <span class="l_rdate">2014-12-12</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="l_rzstep">
+                <h1>融资五步&nbsp;&gt;</h1>
+                <ul class="l_rzstep_area clearfix">
+                    <li class="w175">
+                        <div class="l_rzstep_icon l_bg l_rzstep_icon1"></div>
+                        <h3>联系客服</h3>
+                        <p>Contact Customer Service</p>
+                    </li>
+                    <li class="l_bg l_rzstep_sign"></li>
+                    <li class="w175">
+                        <div class="l_rzstep_icon l_bg l_rzstep_icon2"></div>
+                        <h3>线下洽谈</h3>
+                        <p>Contact Customer Service</p>
+                    </li>
+                    <li class="l_bg l_rzstep_sign"></li>
+                    <li class="w175">
+                        <div class="l_rzstep_icon l_bg l_rzstep_icon3"></div>
+                        <h3>材料审核</h3>
+                        <p>Contact Customer Service</p>
+                    </li>
+                    <li class="l_bg l_rzstep_sign"></li>
+                    <li class="w175">
+                        <div class="l_rzstep_icon l_bg l_rzstep_icon4"></div>
+                        <h3>签署协议</h3>
+                        <p>Contact Customer Service</p>
+                    </li>
+                    <li class="l_bg l_rzstep_sign"></li>
+                    <li class="w175">
+                        <div class="l_rzstep_icon l_bg l_rzstep_icon5"></div>
+                        <h3>融资成功</h3>
+                        <p>Contact Customer Service</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--news end-->
+</div>
+<!--      content end      -->
+<!--      footer      -->
+<div class="l_footer">
+    <div class="l_footer_nav clearfix">
+        <div class="l_center">
+            <ul class="l_footer_nav1 clearfix">
+                <li class="l_footer_menu1"><a href="新手入门.html" title="" target="">新手入门</a></li>
+                <li class="l_footer_menu1"><a href="我要融资.html" title="" target="">我要融资</a></li>
+                <li class="l_footer_menu1"><a href="我要理财.html" title="" target="">我要理财</a></li>
+                <li class="l_footer_menu1"><a href="关于我们.html" title="" target="">关于我们</a></li>
+                <li class="l_footer_menu1"><a href="帮助中心.html" title="" target="">帮助中心</a></li>
+                <li class="l_footer_menu2"><a href="法律声明.html" title="" target="">法律声明</a></li>
+                <li class="l_footer_menu3"><a href="财富工具箱.html" title="" target="">财富工具箱</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="l_footer_info">
+        <div class="l_center">
+
+            <div class="l_footer_info1 clearfix">
+                <ul class="l_footer_linfo1 clearfix">
+                    <li class="l_footer_infobt">合作伙伴:</li>
+                    <li><a href="#" title="" target="">我的返利</a></li>
+                    <li><a href="#" title="" target="">视通在线</a></li>
+                    <li><a href="#" title="" target="">水城论坛</a></li>
+                </ul>
+                <div class="l_footer_rinfo1 clearfix">
+                    <div class="l_footer_rinfo1_txt">官方QQ群：322&nbsp;010&nbsp;164 </div>
+                    <ul class="l_footer_rinfo1_icon clearfix">
+                        <li class="l_footer_iweibo l_bg"></li>
+                        <li class="l_bg l_footer_iwechat"></li>
+                        <li class="l_bg l_footer_iqq"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="l_footer_info2 clearfix">
+                <div class="l_footer_linfo2 clearfix">
+                    <div class="l_footer_infobt fl">关注我们:</div>
+                    <div class="l_footer_linfo2_txt">
+                        <p><span>鼎基久盛(天津)资产管理有限公司 </span><span> ICP经营许可证：津ICP备14005618号</span></p>
+                        <p>总部地址：中国 · 天津 · 河东区七经路92号麟祥大厦8层
+</p>
+                    </div>
+                </div>
+                <div class="l_footer_rinfo2">
+                    <p>客服工作时间：（9：00-18：00）</p>
+                    <div class="l_footer_tel">400-965-1580</div>
+                </div>
+            </div>
+
+            <div class="l_footer_info3">
+                <p>Copyright ©2014-2015 www.hp-tong.com All Rights Reserved  津ICP备14005618号-1</p>
+                <ul class="l_footer_ilink clearfix">
+                    <li><a href="#" title="" target="" class="hover_opacity"><img src="images/footer_icon1.png" alt="" title=""></a></li>
+                    <li><a href="#" title="" target="" class="hover_opacity"><img src="images/footer_icon2.png" alt="" title=""></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!--      footer  end    -->
+</body>
+</html>

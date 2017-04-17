@@ -1,0 +1,281 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta content="telephone=no" name="format-detection">
+<meta name="flexible" content="initial-dpr=2,maximum-dpr=3;">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<title></title>
+</head>
+
+<body class="bodybg">
+    <header class="l-top-nav mb10">
+        <a class="l-inquiry-btn iconfont" ontouchstart="order()">&#xe60d;</a>
+        <span class="l-inquiry-input">
+            <input type="text" placeholder="搜索债权转让管理标的">
+            <i class="l-inquiry-icon iconfont">&#xe603;</i>
+        </span>
+        <a href="账户中心.html" class="l-mem-icon iconfont">&#xe600;</a>
+        <div class="l-zqzrgl-inquiry">
+            <div class="l-zqzrgl-ibtns clearfix">
+                <a ontouchstart="$(this).addClass('click').siblings().removeClass('click');$('.l-inquiry-main>ul:nth-child(1)').show().siblings().hide()">债权转让</a>
+                <a class="click" ontouchstart="$(this).addClass('click').siblings().removeClass('click');$('.l-inquiry-main>ul:nth-child(2)').show().siblings().hide()">债权竞拍</a>
+            </div>
+            <div class="l-inquiry-main clearfix">
+                <ul class="l-wylc-select">
+                    <li class="l-wylc-scircle" ontouchstart="inquiry_area($(this))">
+                        默认排序
+                        <span class="l-wylc-circle">
+                            <i class="l-wylc-circle2"></i>
+                        </span>
+                    </li>
+                    <li ontouchstart="inquiry_area($(this))">
+                        利率从高到低
+                        <span class="l-wylc-circle">
+                            <i class="l-wylc-circle2"></i>
+                        </span>
+                    </li>
+                    <li ontouchstart="inquiry_area($(this))">
+                        待收本金从高到低
+                        <span class="l-wylc-circle">
+                            <i class="l-wylc-circle2"></i>
+                        </span>
+                    </li>
+                    <li ontouchstart="inquiry_area($(this))">
+                        剩余时间从高到低
+                        <span class="l-wylc-circle">
+                            <i class="l-wylc-circle2"></i>
+                        </span>
+                    </li>
+                </ul>
+                <ul class="l-wylc-select" style="display:block;">
+                    <li class="l-wylc-scircle" ontouchstart="inquiry_area($(this))">
+                        竞拍中
+                        <span class="l-wylc-circle">
+                            <i class="l-wylc-circle2"></i>
+                        </span>
+                    </li>
+                    <li ontouchstart="inquiry_area($(this))">
+                        竞拍成功
+                        <span class="l-wylc-circle">
+                            <i class="l-wylc-circle2"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="popupbg" ontouchstart="inquiry_close()"></section>
+    <a href="债权竞拍-竞拍成功.html" class="l-zqzr-list">
+        <p class="l-zqzrgl-title">净水设备销售店进货周转</p>
+        <p class="l-zqzrgl">
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">借款金额：</i>
+                <i class="l-zqzrgl-sum">10,000</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">借款期限：</i>
+                <i>5个月</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">借款利率：</i>
+                <i class="l-zqzrgl-rate">12%</i>
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">债权期限：</i>
+                <i>8个月</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">债权金额：</i>
+                <i class="l-zqzrgl-sum">700</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">竞拍最高额价：</i>
+                <i class="l-zqzrgl-sum">650</i>元
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">我的竞价：</i>
+                <i class="l-zqzrgl-sum">700</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">竞拍者：</i>
+                <i class="l-zqzrgl-sum">sndfign</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">剩余时间：</i>
+                <i class="l-zqzrgl-sum">0天12小时12分</i>
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">状态：</i>
+                <i class="l-zqzrgl-sum">竞拍成功</i>
+            </span>
+        </p>
+    </a>
+    <a href="债权竞拍-竞拍中.html" class="l-zqzr-list">
+        <p class="l-zqzrgl-title">净水设备销售店进货周转</p>
+        <p class="l-zqzrgl">
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">借款金额：</i>
+                <i class="l-zqzrgl-sum">10,000</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">借款期限：</i>
+                <i>5个月</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">借款利率：</i>
+                <i class="l-zqzrgl-rate">12%</i>
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">债权期限：</i>
+                <i>8个月</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">债权金额：</i>
+                <i class="l-zqzrgl-sum">700</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">竞拍最高额价：</i>
+                <i class="l-zqzrgl-sum">650</i>元
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">我的竞价：</i>
+                <i class="l-zqzrgl-sum">700</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">竞拍者：</i>
+                <i class="l-zqzrgl-sum">sndfign</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">剩余时间：</i>
+                <i class="l-zqzrgl-sum">0天12小时12分</i>
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">状态：</i>
+                <i class="l-zqzrgl-sum">竞拍中</i>
+            </span>
+        </p>
+    </a>
+    <a href="债权竞拍-竞拍中.html" class="l-zqzr-list">
+        <p class="l-zqzrgl-title">净水设备销售店进货周转</p>
+        <p class="l-zqzrgl">
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">借款金额：</i>
+                <i class="l-zqzrgl-sum">10,000</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">借款期限：</i>
+                <i>5个月</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">借款利率：</i>
+                <i class="l-zqzrgl-rate">12%</i>
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">债权期限：</i>
+                <i>8个月</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">债权金额：</i>
+                <i class="l-zqzrgl-sum">700</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">竞拍最高额价：</i>
+                <i class="l-zqzrgl-sum">650</i>元
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">我的竞价：</i>
+                <i class="l-zqzrgl-sum">700</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">竞拍者：</i>
+                <i class="l-zqzrgl-sum">sndfign</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">剩余时间：</i>
+                <i class="l-zqzrgl-sum">0天12小时12分</i>
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">状态：</i>
+                <i class="l-zqzrgl-sum">竞拍中</i>
+            </span>
+        </p>
+    </a>
+    <a href="债权竞拍-竞拍中.html" class="l-zqzr-list">
+        <p class="l-zqzrgl-title">净水设备销售店进货周转</p>
+        <p class="l-zqzrgl">
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">借款金额：</i>
+                <i class="l-zqzrgl-sum">10,000</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">借款期限：</i>
+                <i>5个月</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">借款利率：</i>
+                <i class="l-zqzrgl-rate">12%</i>
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">债权期限：</i>
+                <i>8个月</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">债权金额：</i>
+                <i class="l-zqzrgl-sum">700</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">竞拍最高额价：</i>
+                <i class="l-zqzrgl-sum">650</i>元
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">我的竞价：</i>
+                <i class="l-zqzrgl-sum">700</i>元
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">竞拍者：</i>
+                <i class="l-zqzrgl-sum">sndfign</i>
+            </span>
+            <span class="l-zqzrgl-w1">
+                <i class="l-zqzrgl-bt">剩余时间：</i>
+                <i class="l-zqzrgl-sum">0天12小时12分</i>
+            </span>
+            <span class="l-zqzrgl-w2">
+                <i class="l-zqzrgl-bt">状态：</i>
+                <i class="l-zqzrgl-sum">竞拍中</i>
+            </span>
+        </p>
+    </a>
+    
+   
+   
+    <script type="text/javascript">
+        function order(){
+            var inquiry_content =$(".l-zqzrgl-inquiry");       
+            if(inquiry_content.is(":hidden")){
+                $(".popupbg").show();
+                inquiry_content.slideDown(400);
+            }
+            else{
+                inquiry_content.slideUp(300);
+                $(".popupbg").hide();
+            } 
+        }
+        function inquiry_close(){
+            $(".l-zqzrgl-inquiry").hide();
+            $(".popupbg").hide();
+        }
+        function inquiry_area(e){
+            e.addClass('l-wylc-scircle').siblings().removeClass('l-wylc-scircle');
+            e.parents(".l-zqzrgl-inquiry").delay(600).slideUp(function(){
+                e.parents(".l-top-nav").next(".popupbg").hide();
+            });
+        }
+    </script>
+
+</body>
+</html>

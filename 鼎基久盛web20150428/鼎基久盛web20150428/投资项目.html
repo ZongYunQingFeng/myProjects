@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>汇票通</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+    $(".probar60").map(function(){
+        var num=$(this).attr("probar"),
+            timeid;
+        var str="probar60_",
+            i=0;
+            var that=$(this);
+        timeid=setInterval(function(){
+            if(i<=num){
+                that.attr("class","probar60 "+str+i);
+                that.text(i+"%");
+                i++;
+            }else{
+                clearInterval(timeid);
+            }
+        },8);
+    });
+</script>
+</head>
+
+<body>
+<!--      top         -->
+<div class="l_top">
+    <div class="l_top_box">
+        <div class="l_center clearfix">
+            <div class="fr clearfix">
+                <ul class="l_alogin clearfix">
+                    <li class="clearfix bl_none">
+                        <span class="l_alogin_txt">18686868686</span>
+                        <span class="l_alogin_icon"></span>
+                    </li>
+                    <li class="clearfix">
+                        <a href="#" title="" target="">
+                            <span class="l_alogin_txt">帮&nbsp;助</span>
+                            <span class="l_alogin_icon"></span>
+                        </a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="#" title="" target="">
+                            <span class="l_alogin_txt">论&nbsp;坛</span>
+                            <span class="l_alogin_icon"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--nav-->
+    <div class="l_navbg">
+        <div class="l_center clearfix">
+            <div class="l_logo">
+                <a href="index.html" title="汇票通" target=""><img src="images/logo.png" alt="" title=""></a>
+            </div>
+            <ul class="l_nav_title clearfix">
+                <li><a href="index.html" title="" target="">首&nbsp;&nbsp;页</a></li>
+                <li><a href="产品介绍.html" title="" target="">产品介绍</a></li>
+                <li><a href="我的投资.html" title="" target="" class="curnav">汇银票</a></li>
+                <li><a href="我有票据.html" title="" target="">我有票据</a></li>
+                <li><a href="债权转让.html" title="" target="">债权转让</a></li>
+                <li><a href="关于我们.html" title="" target="">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--nav end-->
+</div>
+<!--      top   end      -->
+<!--      content          -->
+<div class="l_tzxm">
+    <div class="l_cpjs_bannerbg pt0">
+        <div class="l_tzxm_bannerbg">
+            <div class="l_center">
+                <ul class="l_zqzr_binfo pl610">
+                    <li class="pl60">
+                        <p class="l_zqzr_btitle">累计成效总金额</p>
+                        <p class="l_zqzr_bdata"><span class="l_zqzr_bsum">30.000</span><span class="l_zqzr_bno">元</span></p>
+                    </li>
+                    <li class="pl30">
+                        <p class="l_zqzr_btitle">累计成交总笔数</p>
+                        <p class="l_zqzr_bdata"><span class="l_zqzr_bsum">3000</span><span class="l_zqzr_bno">笔</span></p>
+                    </li>
+                    <li>
+                        <p class="l_zqzr_btitle">为用户赚取</p>
+                        <p class="l_zqzr_bdata"><span class="l_zqzr_bsum">30.000.00</span><span class="l_zqzr_bno">元</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="l_center">
+        <div class="l_tzxm_list clearfix">
+            <div class="l_bg l_tzxm_nav">
+                <span>投资列表</span>
+            </div>
+            <ul class="l_tzbtn clearfix">
+                <li class="l_bg l_tzbtn1"><span>1元起投</span></li>
+                <li class="l_bg l_tzbtn2"><span>购买成功立即起息</span></li>
+            </ul>
+            <div class="clear"></div>
+            <div class="l_tzxm_content">
+                <ul class="l_tzxm_title clearfix">
+                    <li class="w152">年化收益</li>
+                    <li class="w114">期&nbsp;数</li>
+                    <li class="w170">投资金额</li>
+                    <li class="w104">结息日期</li>
+                    <li class="w133">进&nbsp;度</li>
+                    <li class="w180">状&nbsp;态</li>
+                </ul>
+                <div class="l_tzxm_area">
+                    <ul class="l_tzxm_area1 clearfix">
+                        <li class="w152">
+                            <span class="l_tzxm_btxt f59">7.6</span>
+                            <span class="l_tzxm_gtxt f16">%</span>
+                        </li>
+                        <li class="w114">
+                            <span class="l_tzxm_gtxt2 f16">第</span>
+                            <span class="l_tzxm_btxt l_qs">14 </span>
+                            <span class="l_tzxm_gtxt2 f16">期</span>
+                        </li>
+                        <li class="w170">
+                            <span class="l_tzxm_btxt f28">30,000</span>
+                            <span class="l_tzxm_gtxt f16">元</span>
+                        </li>
+                        <li class="w104">
+                            <span class="l_tzxm_btxt f28">10</span>
+                            <span class="l_tzxm_gtxt f16">天</span>
+                        </li>
+                        <li class="w133">
+                            <div class="probar60 probar60_100" probar="100">100%</div>
+                            <div class="probar" style="display:none;"></div>
+                        </li>
+                        <li class="w180 br_none">
+                            <a class="l_bg l_tzxm_bbtn hover_opacity">
+                                <p class="l_tzxm_bbtntxt1">即将发售</p>
+                                <p class="l_tzxm_bbtntxt2"><strong>01</strong>时<strong>00</strong>分<strong>02秒</strong></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="l_tzxm_area2 clearfix">
+                        <div class="l_tzxm_larea2">无条件承兑银行</div>
+                        <div class="l_tzxm_rarea2">剩余份数&nbsp;1574份</div>
+                    </div>
+                </div>
+                <div class="l_tzxm_area">
+                    <ul class="l_tzxm_area1 clearfix">
+                        <li class="w152">
+                            <span class="l_tzxm_otxt f59">7.6</span>
+                            <span class="l_tzxm_gtxt f16">%</span>
+                        </li>
+                        <li class="w114">
+                            <span class="l_tzxm_gtxt2 f16">第</span>
+                            <span class="l_tzxm_otxt l_qs">14 </span>
+                            <span class="l_tzxm_gtxt2 f16">期</span>
+                        </li>
+                        <li class="w170">
+                            <span class="l_tzxm_otxt f28">30,000</span>
+                            <span class="l_tzxm_gtxt f16">元</span>
+                        </li>
+                        <li class="w104">
+                            <span class="l_tzxm_otxt f28">10</span>
+                            <span class="l_tzxm_gtxt f16">天</span>
+                        </li>
+                        <li class="w133">
+                            <div class="probar60 probar60_65" probar="65">65%</div>
+                            <div class="probar" style="display:none;"></div>
+                        </li>
+                        <li class="w180 br_none">
+                            <a class="l_bg l_tzxm_obtn hover_opacity">立即抢购</a>
+                        </li>
+                    </ul>
+                    <div class="l_tzxm_area3 clearfix">
+                        <div class="l_tzxm_larea2">无条件承兑银行</div>
+                        <div class="l_tzxm_rarea2">剩余份数&nbsp;1574份</div>
+                    </div>
+                </div>
+                <div class="l_tzxm_area">
+                    <ul class="l_tzxm_area1 clearfix">
+                        <li class="w152">
+                            <span class="l_tzxm_otxt f59">7.6</span>
+                            <span class="l_tzxm_gtxt f16">%</span>
+                        </li>
+                        <li class="w114">
+                            <span class="l_tzxm_gtxt2 f16">第</span>
+                            <span class="l_tzxm_otxt l_qs">14 </span>
+                            <span class="l_tzxm_gtxt2 f16">期</span>
+                        </li>
+                        <li class="w170">
+                            <span class="l_tzxm_otxt f28">30,000</span>
+                            <span class="l_tzxm_gtxt f16">元</span>
+                        </li>
+                        <li class="w104">
+                            <span class="l_tzxm_otxt f28">10</span>
+                            <span class="l_tzxm_gtxt f16">天</span>
+                        </li>
+                        <li class="w133">
+                            <div class="probar60 probar60_65" probar="65">65%</div>
+                            <div class="probar" style="display:none;"></div>
+                        </li>
+                        <li class="w180 br_none">
+                            <a class="l_bg l_tzxm_obtn hover_opacity">立即抢购</a>
+                        </li>
+                    </ul>
+                    <div class="l_tzxm_area3 clearfix">
+                        <div class="l_tzxm_larea2">无条件承兑银行</div>
+                        <div class="l_tzxm_rarea2">剩余份数&nbsp;1574份</div>
+                    </div>
+                </div>
+                <div class="l_tzxm_area">
+                    <ul class="l_tzxm_area1 clearfix">
+                        <li class="w152">
+                            <span class="l_tzxm_otxt f59">7.6</span>
+                            <span class="l_tzxm_gtxt f16">%</span>
+                        </li>
+                        <li class="w114">
+                            <span class="l_tzxm_gtxt2 f16">第</span>
+                            <span class="l_tzxm_otxt l_qs">14 </span>
+                            <span class="l_tzxm_gtxt2 f16">期</span>
+                        </li>
+                        <li class="w170">
+                            <span class="l_tzxm_otxt f28">30,000</span>
+                            <span class="l_tzxm_gtxt f16">元</span>
+                        </li>
+                        <li class="w104">
+                            <span class="l_tzxm_otxt f28">10</span>
+                            <span class="l_tzxm_gtxt f16">天</span>
+                        </li>
+                        <li class="w133">
+                            <div class="probar60 probar60_65" probar="65">65%</div>
+                            <div class="probar" style="display:none;"></div>
+                        </li>
+                        <li class="w180 br_none">
+                            <a class="l_bg l_tzxm_obtn hover_opacity">立即抢购</a>
+                        </li>
+                    </ul>
+                    <div class="l_tzxm_area3 clearfix">
+                        <div class="l_tzxm_larea2">无条件承兑银行</div>
+                        <div class="l_tzxm_rarea2">剩余份数&nbsp;1574份</div>
+                    </div>
+                </div>
+                <div class="l_tzxm_area">
+                    <ul class="l_tzxm_area1 clearfix">
+                        <li class="w152">
+                            <span class="l_tzxm_otxt f59">7.6</span>
+                            <span class="l_tzxm_gtxt f16">%</span>
+                        </li>
+                        <li class="w114">
+                            <span class="l_tzxm_gtxt2 f16">第</span>
+                            <span class="l_tzxm_otxt l_qs">14 </span>
+                            <span class="l_tzxm_gtxt2 f16">期</span>
+                        </li>
+                        <li class="w170">
+                            <span class="l_tzxm_otxt f28">30,000</span>
+                            <span class="l_tzxm_gtxt f16">元</span>
+                        </li>
+                        <li class="w104">
+                            <span class="l_tzxm_otxt f28">10</span>
+                            <span class="l_tzxm_gtxt f16">天</span>
+                        </li>
+                        <li class="w133">
+                            <div class="probar60 probar60_65" probar="65">65%</div>
+                            <div class="probar" style="display:none;"></div>
+                        </li>
+                        <li class="w180 br_none">
+                            <a class="l_bg l_tzxm_obtn hover_opacity">立即抢购</a>
+                        </li>
+                    </ul>
+                    <div class="l_tzxm_area3 clearfix">
+                        <div class="l_tzxm_larea2">无条件承兑银行</div>
+                        <div class="l_tzxm_rarea2">剩余份数&nbsp;1574份</div>
+                    </div>
+                </div>
+                <div class="l_tzxm_area">
+                    <ul class="l_tzxm_area1 clearfix">
+                        <li class="w152">
+                            <span class="l_tzxm_otxt f59">7.6</span>
+                            <span class="l_tzxm_gtxt f16">%</span>
+                        </li>
+                        <li class="w114">
+                            <span class="l_tzxm_gtxt2 f16">第</span>
+                            <span class="l_tzxm_otxt l_qs">14 </span>
+                            <span class="l_tzxm_gtxt2 f16">期</span>
+                        </li>
+                        <li class="w170">
+                            <span class="l_tzxm_otxt f28">30,000</span>
+                            <span class="l_tzxm_gtxt f16">元</span>
+                        </li>
+                        <li class="w104">
+                            <span class="l_tzxm_otxt f28">10</span>
+                            <span class="l_tzxm_gtxt f16">天</span>
+                        </li>
+                        <li class="w133">
+                            <div class="probar60 probar60_65" probar="65">65%</div>
+                            <div class="probar" style="display:none;"></div>
+                        </li>
+                        <li class="w180 br_none">
+                            <a class="l_bg l_tzxm_obtn hover_opacity">立即抢购</a>
+                        </li>
+                    </ul>
+                    <div class="l_tzxm_area3 clearfix">
+                        <div class="l_tzxm_larea2">无条件承兑银行</div>
+                        <div class="l_tzxm_rarea2">剩余份数&nbsp;1574份</div>
+                    </div>
+                </div>
+                <div class="l_tzxm_area">
+                    <ul class="l_tzxm_area1 clearfix">
+                        <li class="w152">
+                            <span class="l_tzxm_gtxt f59">7.6</span>
+                            <span class="l_tzxm_gtxt f16">%</span>
+                        </li>
+                        <li class="w114">
+                            <span class="l_tzxm_gtxt2 f16">第</span>
+                            <span class="l_tzxm_gtxt l_qs">14 </span>
+                            <span class="l_tzxm_gtxt2 f16">期</span>
+                        </li>
+                        <li class="w170">
+                            <span class="l_tzxm_gtxt f28">30,000</span>
+                            <span class="l_tzxm_gtxt f16">元</span>
+                        </li>
+                        <li class="w104">
+                            <span class="l_tzxm_gtxt f28">10</span>
+                            <span class="l_tzxm_gtxt f16">天</span>
+                        </li>
+                        <li class="w133">
+                            <div class="probar60 probar60_100" probar="100">100%</div>
+                            <div class="probar" style="display:none;"></div>
+                        </li>
+                        <li class="w180 br_none">
+                        </li>
+                    </ul>
+                    <div class="l_tzxm_isq"></div>
+                    <div class="l_tzxm_area4 clearfix">
+                        <div class="l_tzxm_larea2">无条件承兑银行</div>
+                        <div class="l_tzxm_rarea2">剩余份数&nbsp;1574份</div>
+                    </div>
+                </div>
+                <div class="l_pages">
+                    <a href="javascript:void(0)" title="" target="" class="l_bg l_prepage">&lt;</a>
+                    <a href="javascript:void(0)" title="" target="" class="l_bg curpage">1</a>
+                    <a href="javascript:void(0)" title="" target="" class="l_bg">2</a>
+                    <a href="javascript:void(0)" title="" target="" class="l_bg">3</a>
+                    <a href="javascript:void(0)" title="" target="" class="l_bg">4</a>
+                    <a href="javascript:void(0)" title="" target="" class="l_bg">5</a>
+                    <a href="javascript:void(0)" title="" target="" class="l_bg">6</a>
+                    <span>...</span>
+                    <a href="javascript:void(0)" title="" target="" class="l_bg l_prepage">&gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--      content end      -->
+<!--      footer      -->
+<div class="l_footer">
+    <div class="l_footer_nav clearfix">
+        <div class="l_center">
+            <ul class="l_footer_nav1 clearfix">
+                <li class="l_footer_menu1"><a href="新手入门.html" title="" target="">新手入门</a></li>
+                <li class="l_footer_menu1"><a href="我要融资.html" title="" target="">我要融资</a></li>
+                <li class="l_footer_menu1"><a href="我要理财.html" title="" target="">我要理财</a></li>
+                <li class="l_footer_menu1"><a href="关于我们.html" title="" target="">关于我们</a></li>
+                <li class="l_footer_menu1"><a href="帮助中心.html" title="" target="">帮助中心</a></li>
+                <li class="l_footer_menu2"><a href="法律声明.html" title="" target="">法律声明</a></li>
+                <li class="l_footer_menu3"><a href="财富工具箱.html" title="" target="">财富工具箱</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="l_footer_info">
+        <div class="l_center">
+
+            <div class="l_footer_info1 clearfix">
+                <ul class="l_footer_linfo1 clearfix">
+                    <li class="l_footer_infobt">合作伙伴:</li>
+                    <li><a href="#" title="" target="">我的返利</a></li>
+                    <li><a href="#" title="" target="">视通在线</a></li>
+                    <li><a href="#" title="" target="">水城论坛</a></li>
+                </ul>
+                <div class="l_footer_rinfo1 clearfix">
+                    <div class="l_footer_rinfo1_txt">官方QQ群：322&nbsp;010&nbsp;164 </div>
+                    <ul class="l_footer_rinfo1_icon clearfix">
+                        <li class="l_footer_iweibo l_bg"></li>
+                        <li class="l_bg l_footer_iwechat"></li>
+                        <li class="l_bg l_footer_iqq"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="l_footer_info2 clearfix">
+                <div class="l_footer_linfo2 clearfix">
+                    <div class="l_footer_infobt fl">关注我们:</div>
+                    <div class="l_footer_linfo2_txt">
+                        <p><span>鼎基久盛(天津)资产管理有限公司 </span><span> ICP经营许可证：津ICP备14005618号</span></p>
+                        <p>总部地址：中国 · 天津 · 河东区七经路92号麟祥大厦8层
+</p>
+                    </div>
+                </div>
+                <div class="l_footer_rinfo2">
+                    <p>客服工作时间：（9：00-18：00）</p>
+                    <div class="l_footer_tel">400-965-1580</div>
+                </div>
+            </div>
+
+            <div class="l_footer_info3">
+                <p>Copyright ©2014-2015 www.hp-tong.com All Rights Reserved  津ICP备14005618号-1</p>
+                <ul class="l_footer_ilink clearfix">
+                    <li><a href="#" title="" target="" class="hover_opacity"><img src="images/footer_icon1.png" alt="" title=""></a></li>
+                    <li><a href="#" title="" target="" class="hover_opacity"><img src="images/footer_icon2.png" alt="" title=""></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!--      footer  end    -->
+</div>
+</body>
+</html>

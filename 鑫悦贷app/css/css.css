@@ -1,0 +1,437 @@
+@charset "utf-8";
+/* CSS Document */
+body, p, div, ul, li, dl, dd, dt, h1, h2, h3,h4, table, td, tr, input,span {
+	padding: 0;
+	margin: 0
+}
+body {
+	min-width:320px;
+	margin: 0px auto;
+	padding: 0px;
+	font:400 14px/1.5 helvetica,verdana,san-serif;
+	background: #f5f5f5;
+	text-align: left
+}
+img, input {
+	border: 0
+}
+input{-webkit-appearance: none;appearance: none;outline: none;-webkit-tap-highlight-color: transparent;}
+ul, li {
+	list-style: none
+}
+em,i,h2,h1,h3{ font-style:normal; font-weight:normal; text-decoration:none;}
+a{ text-decoration:none; color:#333}
+.icotic{ background:url(../images/icotic.png) no-repeat;  
+	display: inline-block;
+  background-size: 320px 320px;
+  vertical-align: middle;}
+.clear{display:block;float:none;clear:both;overflow:hidden;visibility:hidden;width:0;height:0;background:none;border:0;font-size:0}
+.clr:after { content:""; clear:both; visibility:hidden; display:block; font-size:0; height:0; line-height:0;}
+.clr { zoom:1;}
+/*===手机网站首页==*/
+.ly_warpper{ max-width:640px; margin:auto}
+/* Banner */
+.slideBox{ position:relative; overflow:hidden; margin:0 auto; /* 璁剧疆鐒︾偣鍥炬渶澶у搴� */ }
+.slideBox .hd{ position:absolute; height:15px; line-height:15px; bottom:5px; z-index:1; width: 100%; text-align: center;}
+.slideBox .hd li{ display:inline-block; width:10px; height:10px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; background:rgba(255,255,255,0.5); text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+.slideBox .hd li.on{ background:rgba(255,255,255,1);}
+.slideBox .bd{ position:relative; z-index:0; }
+.slideBox .bd li{ position:relative; text-align:center;  }
+.slideBox .bd li img{vertical-align:top; width:100%;/* 鍥剧墖瀹藉害100%锛岃揪鍒拌嚜閫傚簲鏁堟灉 */}
+.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 鍘绘帀閾炬帴瑙︽懜楂樹寒 */
+/* end */
+.ly_newslist{ height:40px; border-bottom: 1px solid #dedede; background:#FFF; overflow:hidden; padding:0px 3%}
+.ly_newslist i{ background-position: 0px 0px; width:13px; height:12px;  float:left; margin:14px 6px 0 0; display:block}
+.ly_newslist ul{ width:90%; float:left; text-overflow:ellipsis; }
+.ly_newslist li{  height:40px; line-height:40px; font-size:14px;overflow:hidden }
+.ly_newslist li a{ color:#666666; display:block}
+.ly_sider{ background:#FFF;padding:13px 3%; overflow:hidden;border-bottom: 1px solid #dedede;}
+.ly_siderleft{ width:50%; float:left; border-right: 1px solid #dedede}
+.ly_sideright{ width:46%; float:right}
+.ly_sider p{ font-size:14px; color:#666666; line-height:30px;}
+.ly_sider em{ font-size:18px; color:#e73825}
+.ly_navlist{ margin-top:11px;}
+.ly_navlist li{ height:80px; border-top: 1px solid #dedede; background:#FFF;padding:8px 3% 0px 3%;}
+.ly_navlist li a{ display:block}
+.ly_navlist i{ display:block; float:left; width:36px; height:36px; margin-top:17px;  }
+.ly_navlist i.ico01{ background-position:-21px 0px;}
+.ly_navlist i.ico02{ background-position:-61px 0px;}
+.ly_navlist i.ico03{ background-position:-101px 0px;}
+.ly_navlist i.ico04{ background-position:-142px 0px;}
+.ly_navtxt{ width:84%; float:right; vertical-align:middle}
+.ly_navtxt h3{ font-size:16px; line-height:25px;}
+.ly_navtxt p{ font-size:14px; color:#666666; line-height:20px; height:40px; overflow:hidden;text-overflow:ellipsis;}
+.ly_navtxt a h3{ color:#333333}
+.ly_navtxt a  p{ color:#666666;}
+/*======注册/登录=====*/
+.ly_head{ height:50px; background:#e73825; line-height:50px; padding: 0px 3%; position:relative}
+.ly_head h2{ text-align:center; color:#FFF; font-size:20px;}
+.ly_head span{ float:right; font-size:16px; position:absolute; right:3%; top:0px;}
+.ly_head span a{ color:#FFF;}
+.ly_regwrap{ margin: 0px 3%; padding-top:16px;}
+.ly_regwrap li{ height:48px; margin-top:14px;}
+.ly_userbox{ height:46px; border:1px solid #dedede; background:#FFF; border-radius:5px;}
+.ly_usercopy{ width:60%; float:left}
+.ly_userico{ width: 46px; float:left; border-right:1px solid #dedede; height:46px;}
+.ly_userico i{ display:block;}
+.usernameico{ background-position: -184px -26px; width:18px; height:20px; margin:13px 0 0 14px;}
+.passwordico{background-position: -226px 0px; width:18px; height:20px; margin:13px 0 0 14px;}
+.usertelico{background-position: -250px 0px; width:13px; height:20px; margin:13px 0 0 17px;}
+.emailico{background-position: -269px 0px; width:22px; height:13px; margin:17px 0 0 12px;}
+.usercopyico{background-position: -297px 0px; width:12px; height:14px; margin:16px 0 0 17px;}
+.userrenico{background-position: -206px -29px; width:17px; height:17px; margin:15px 0 0 14px;}
+.ly_usernamebox{ width:70%; float:left; padding:5px 0 5px 3%; position:relative}
+.ly_usernamebox input{ width:100%; height:36px; background:none; border:none; font-size:16px; line-height:36px; color:#999999;}
+.ly_usernamebox i{ display:block;background-position: -207px 0px; width:14px; height:8px; position:absolute; top:19px; right: -20px;}
+.ly_copybnt{ width:35%; height:46px; background:#e73825; line-height:46px; text-align:center; font-size:15px; color:#FFF; display:block; float:right; border-radius:5px;}
+.ly_regbnt{ height:50px;background:#e73825; line-height:50px; text-align:center; font-size:18px; color:#FFF; display:block; border-radius:5px; margin-top:20px;}
+.ly_regup{ margin-top:42px;}
+.ly_regup img{ width:100%}
+.focusbox{ border-color:#e73825}
+.focusbox .ly_userico{  border-color:#e73825}
+.focusbox .usernameico{background-position: -184px 0px;}
+.focusbox .passwordico{background-position: -226px -25px; }
+.focusbox .usertelico{background-position: -250px -26px;}
+.focusbox .emailico{background-position: -269px -26px; }
+.focusbox .usercopyico{background-position: -297px -26px; }
+.focusbox .userrenico{background-position: -206px -52px;}
+.ly_copyimg{width:35%; height:34px; display:block; float:right; padding-top:12px;}
+.ly_copyimg img{ height:23px;}
+.ly_login{ font-size:16px; color:#3387cf; display:block; padding-top:14px;}
+/*=====忘记密码====*/
+.ly_iphone{ width:94%; margin:30px auto 0px auto; background:#FFF;  border:1px solid #e73825; border-radius:5px; height:40px;}
+.ly_iphone li{ width:50%; float:left; color:#e73825; line-height:40px; text-align:center; font-size:15px;}
+.ly_iphone li a{ display:block;color:#e73825; }
+.ly_iphone li.ly_showiphoe{ background:#e73825;}
+.ly_iphone li.ly_showiphoe a{ color:#FFF;}
+.ly_iponemain{ margin-top:6px;}
+/*=====我要理财====*/
+.ly_head span i.ly_usereg{ background-position: 0px -41px; width:20px; height:20px; display:block; margin-top:15px;}
+.ly_mysel{ width:94%;margin:30px auto 0px auto;}
+.ly_myselect{ width:25%; float:left; height:40px; border: 1px solid #dedede; background:#FFF; padding-left:5%; font-size:14px; position:relative}
+.ly_myselect i{ position:absolute; bottom:3px; right:3px; background-position: 0px -19px; width:9px; height:9px;}
+.ly_myselect  p{line-height:40px; color:#333333}
+.ly_myselect ul{ position:absolute; left:-1px; top:40px;border: 1px solid #dedede; border-bottom:none; background:#FFF; width:100%; display:none; z-index:1}
+.ly_myselect  li{ line-height:40px;padding-left:10%; border-bottom:1px solid #dedede;}
+.ly_myseacher{ width:65%; float:right; height:40px; border: 1px solid #dedede; background:#FFF; }
+.ly_myseacher a{ background-position: 0px -68px; width:13px; height:13px; display:block; float:left; margin:15px 3% 0px 3%; float:left }
+.ly_myseacher input{ border:none; background:none; line-height:30px; padding:5px 0px; width:80%; float:left;font-size:14px; color:#999999; outline:none;}
+.ly_mylist{ width:94%;margin:0px auto; padding:10px 0px 20px 0px;}
+.ly_mylist li{ margin-top:10px; border: 1px solid #dedede; border-top: 2px solid #e73825; background:#FFF; padding:20px 12px; position:relative}
+.ly_mylist li a p{ line-height:24px; font-size:14px; color:#333333; margin-top:10px;}
+.ly_mylist li a  h3{ line-height:15px; font-size:16px;color:#333333;}
+.ly_mylist li a  i{ width:15px; height:15px; display:block; float:left; margin-right:7px; }
+.ly_mylist li a  i img{ height:15px;}
+.ly_mylist li a { display:block}
+.ly_progressright{ position:absolute; right:12px; top:43px;}
+.ly_topreltive{ position:absolute; right:12px; top:23px;}
+.p_lcprogres{width: 62px;height: 62px;display: inline-block;position: relative;border-radius: 31px;background: #d2d1d1; overflow:hidden}
+.p_lcprogres-cover {position: absolute;width: 56px;height: 56px;top: 3px;left: 3px;border-radius: 31px;background: #fff;z-index: 3;line-height: 56px;text-align: center;font-size:15px;color: #333;}
+.p_lcpleft{width: 31px; height: 62px; position: absolute; left: 0; top:0; overflow: hidden;}
+.p_lcpright{width: 31px; height: 62px; position: absolute; right: 0; top:0; overflow: hidden;}
+.p_lchalf{width: 31px; height: 62px; position: absolute; top:0;}
+.p_lcpleft .p_lchalf{left: 31px; border-radius:0 31px 31px 0; background: #e73825;-webkit-transform-origin:left center;-moz-transform-origin:left center;-o-transform-origin:left center;-ms-transform-origin:left center;transform-origin:left center;}
+.p_lcpright .p_lchalf{right: 31px;  border-radius:31px 0 0 31px; background: #e73825;-webkit-transform-origin:right center;-moz-transform-origin:right center;-o-transform-origin:right center;-ms-transform-origin:right center;transform-origin:right center;}
+/*=======新手入门======*/
+.ly_newbook{ width:94%;margin:  auto; padding:20px 0px;}
+.ly_newbook li{ margin-top:10px; background:#FFF; border: 1px solid #dedede; padding: 10px 6px 10px 12px;}
+.ly_newbook li a h3{ overflow:hidden; line-height:26px; font-size:16px; color:#333333; height:26px;}
+.ly_newbook li a p{overflow:hidden; line-height:20px; font-size:13px; color:#666666; height:40px; overflow:hidden}
+.ly_newbook li a i{line-height:28px;  font-size:13px; color:#666666; display:block}
+.ly_newbook li a { display:block}
+/*=========我的理财账单=========*/
+.ly_lcmain a{ width:38px; height:20px; line-height:20px; text-align:center; border-radius:3px; float:left; margin-right:8px;}
+.ly_lcmain a.ly_lcweishou{ border: 1px solid #e73825; color:#e73825;}
+.ly_lcmain { margin-top:12px; height:22px; overflow:hidden}
+.ly_lcmain a.ly_lcyuqian{ border: 1px solid #45b533; color:#45b533;}
+/*======安全设置==========*/
+.ly_head i.ly_gotoindex{ background-position: -23px -41px; width:20px; height:20px; display:block; margin-top:15px;}
+.ly_set{margin:30px auto 0px auto; border-top: 1px solid #e6e6e6}
+.ly_set li{ height:44px; background:#FFF;  border-bottom: 1px solid #e6e6e6; line-height:44px; padding:0px 3%; font-size:16px; color:#333333;}
+.ly_set li em{ color:#e73825; margin-left:5%;}
+.ly_set li span{ float:right}
+.ly_set li span i.icotic{ display:inline-block; width:7px; height:13px; margin:0px 0 0 8px; background-position: -19px -67px; vertical-align:middle}
+.ly_set li span a{ color:#999999; font-size:15px;}
+/*====绑定账户====*/
+.ly_acount{ font-size:14px; line-height:24px; background:#fbf6e8; border: 1px solid #f5deba; color:#333333; padding:3%;margin:30px auto 0px auto; width:88% }
+.ly_acounttop{ padding-top:0px;}
+/*======充值======*/
+.ly_onup{ width:80%; height:30px; line-height:30px; outline:none; border:none; background:none; font-size:15px; color:#999999; }
+.ly_onupright{ float:right; width:45%; text-align:right}
+.ly_set a.ly_tuup{ color:#333333}
+.ly_onupdown{ margin:0px 3%}
+.ly_onupdown{ line-height:24px; font-size:13px; color:#333333; margin-top:10px;}
+.ly_onupdown i{ color:#e73825;}
+/*=========官方公告========*/
+.ly_imgsrc{ padding: 8px 0px;}
+.ly_imgsrc img{ width:100%;}
+.ly_active{ margin: 20px 5% 0px 5%;  }
+.ly_active h1{ font-size:18px; line-height:30px;}
+.ly_active  .ly_actime{ line-height:24px; font-size:13px; color:#666666; display:block;  height:24px;}
+.ly_activemain{ padding-top:10px;}
+.ly_activemain img{ width:100%}
+.ly_activemain p{ margin-top:10px; line-height:24px; font-size:13px; color:#333333}
+/*=======交易记录======*/
+.ly_history{ width:66%; float:right}
+.ly_history input{ width:39%; height:30px; background:#FFF; padding:5px 4%; line-height:30px;border: 1px solid #dedede; float:left;font-size:14px; color:#999999; text-align:center}
+.ly_history input.ly_endtime{ float:right}
+.ly_historylist{ margin:0px 3%; padding:10px 0px 20px 0px; }
+.ly_historylist li{border: 1px solid #dedede; border-top: 2px solid #e73825; background:#FFF; padding:12px; margin-top:10px;}
+.ly_historylist h3{ font-size:24px; color:#e73825; }
+.ly_historylist p{line-height:24px; font-size:14px; color:#333333;}
+/*==============借款标详情==========*/
+.ly_borrow{ background:#FFF; padding:20px 3% 20px 3%; border-top: 1px solid #dedede; position:relative}
+.ly_borrow p{ line-height:24px; font-size:14px; color:#666666; margin-top:10px;}
+.ly_borrow  h3{ line-height:15px; font-size:16px;color:#333333;}
+.ly_borrow  h3 i{ width:15px; height:15px; display:block; float:left; margin-right:7px; }
+.ly_borrow h3  i img{ height:15px;}
+.ly_borrowico{ width:50px;  height:20px;border: 1px solid #e73825; font-size:14px; line-height:20px; color:#e73825; text-align:center; display:block; float:left; border-radius:3px; margin-right:7px; }
+.ly_borrow em{ color:#e73825}
+.ly_borrow span{ color:#333333}
+.ly_borrowtime{background:#FFF; padding:0 3%; border-top: 1px solid #dedede;border-bottom: 1px solid #dedede; height:40px; line-height:40px; color:#666666; font-size:14px;}
+.ly_borrowtime i{ background-position: -48px -41px; width:15px; height:15px; display:block; float:left; margin: 13px 7px 0 0;}
+.ly_borrowtime em{ color:#333;}
+.ly_borrowmore{ margin-top:10px;}
+.ly_borrowmore span.ly_borrowred{ color:#e73825}
+.ly_borrowmoreright{ float:right; width:55%; text-align:right}
+.ly_passwordtxt{float:right; width:15%; text-align:right}
+.ly_passwordtxt input{width:100%; height:30px; line-height:30px; outline:none; border:none; background:none; font-size:15px; color:#999999; margin-top:10px;}
+.ly_borrowbnt{ height:50px;background:#e73825; line-height:50px; text-align:center; font-size:18px; color:#FFF; display:block; border-radius:5px; margin:15px 3%;}
+.ly_borrowset{ padding-bottom:20px;}
+.ly_borrowset>ul>li{ height:44px; background:#FFF;  border-bottom: 1px solid #e6e6e6; line-height:44px; padding:0px 3%; font-size:16px; color:#333333;}
+.ly_borrowset>ul>li span{ float:right}
+.ly_borrowset a{ display:block;color:#333333;}
+.ly_borrowset>ul>li span i{ display:inline-block; width:7px; height:13px; margin:0px 0 0 8px; background-position: -19px -67px; vertical-align:middle}
+.ly_borrowset>ul>li span i.icoshow{ background-position: -28px -67px;width:13px; height:7px; margin:0px 0 0 8px;vertical-align:middle}
+.ly_turnupmore{ margin-top:20px;}
+.ly_turnupmore img{ height:20px; margin-top:12px;}
+.ly_turnupright{ float:right; width:45%; text-align:right; margin-top:7px;}
+.ly_turnuptel{ float:right; width:55%; text-align:right; margin-top:7px;}
+.ly_turnupcopy{ float:right; width:68%; margin-top:7px;}
+.ly_onuptel{ width:100%; height:30px; line-height:30px; outline:none; border:none; background:none; font-size:15px; color:#999999; }
+.ly_copytel{width:60%; height:30px; line-height:30px; outline:none; border:none; background:none; font-size:15px; color:#999999; float:left}
+.ly_turnupcopy a{ width:35%; line-height:30px; height:30px; display:block; background:#e73825; font-size:14px; color:#FFF; text-align:center; float:right; border-radius:3px;}
+.ly_borrowboxMain{background:#FFF;border: 1px solid #dcdcdc; border-top:none; background:#FFF; border-radius: 3px; margin-top:-4px; padding: 0px 3% 8px 3%; font-size:13px; color:#666666; line-height:23px; display:none}
+.ly_borrowboxMain h1{ font-size:15px; color:#333; margin:8px 0 5px 0;}
+.ly_borrowboxMain p{ margin-top:5px; clear:both}
+.ly_borrowboxMain em{ color:#999999;}
+.ly_borrowboxMain li{ border-bottom: 1px dotted #dcdcdc; line-height:32px; height:32px;}
+.ly_borrowboxMain li a{  color:#ff5258}
+.ly_borrowboxMain li.ly_last{ border:none}
+.ly_borrowboxMain i{ color:#ff5258}
+/*==========乾多多授权=============*/
+.ly_attorney{ margin: 0 3%; padding-top:5px; }
+.ly_attorney li{ margin-top:10px; border: 1px solid #dedede; border-top: 2px solid #e73825; background:#FFF; }
+.ly_attorney h2{height:40px; border-bottom: 1px solid #e6e6e6; line-height:40px; padding:0px 3%; font-size:16px; color:#e73825}
+.ly_attorneyDiv{ padding: 3%; line-height:24px; font-size:16px; }
+.ly_attorneytxt{ font-size:16px; line-height:26px;}
+.ly_attornyup{ margin-top:10px;}
+.ly_passwordbox{ margin: 10px 3% 0 3%;}
+.ly_turnupmore span.ly_borrowred{ color:#e73825}
+.ly_openuser{ margin: 0 3%;}
+.ly_openuser h2{ font-size:16px; line-height:50px; color:#333333;}
+.ly_openuser h2 i{ font-size:14px;}
+.h20{ margin-top:10px;}
+/*=====双乾注册======*/
+.ly_regbox{ padding-top:20px;}
+.ly_regbox p.ly_pcopyright{ margin: 8px 3% 0 3%; font-size:13px; line-height:20px; color:#666666;}
+.ly_regline{ font-size:17px; color:#333333; border-bottom: 1px solid #dedede; height:20px; position:relative ;text-align:center; margin-top:10px;}
+.ly_regline i{ display:inline-block; padding: 0px 5px; background:#f5f5f5; margin-top:8px; }
+.ly_telregborder{ border-radius: 3px;}
+.ly_nologin{ height:35px; border: 1px solid #dedede; background:#FFF; border-top:none; margin: 0px 3% 0px 3%; border-radius:  0px  0px 3px 3px;text-align:right;}
+.ly_nologin a{  font-size:14px; line-height:35px; color:#666666; padding-right: 3%;}
+/*=======双乾注册成功========*/
+.ly_scuessreg{ margin: 30px 3% 0px 3%; font-size:15px; line-height:23px; color:#333333;}
+.ly_scuessreg i{ color:#e73825}
+.ly_redcolor{ color:#e73825}
+.ly_imgboxsrc img{ height:20px;  margin-right:5px;vertical-align: middle;}
+.ly_imgboxsrc { font-size:14px; color:#666666; }
+.ly_iready{ line-height:21px; margin: 10px 3%; font-size:14px; color:#333333}
+.ly_iready i{color:#e73825}
+/*====我要投资======*/
+.ly_myWarp{ height:36px; background:#FFF;border-radius:18px;px;border:1px solid #dcdcdc; line-height:36px; margin: 30px 3% 0px 3%; }
+.ly_myWarp i{ width:13px; height:13px; background-position: 0px -68px; float:left; margin:12px 12px 0 12px;}
+.ly_myWarp p{ width:80%; float:left; height:18px; padding-top:9px; line-height:18px;}
+.ly_myWarp input{line-height:18px; font-size:15px; color:#999999;  background:none; border: none; width:100%;}
+.ly_myselbox{margin: 20px 3% 0px 3%;  border: 1px solid #e73825; border-radius:3px; background:#FFF; text-align:center; line-height:36px; height:36px;}
+.ly_myselbox li{ width:24.5%; float:left; border-right: 1px solid #e73825}
+.ly_myselbox li.last{ border-right: none; width:26.5%}
+.ly_myselbox li.myselshow{ background:#e73825; color:#FFF;}
+.ly_myselbox i{ background-position: -73px -41px; width:6px; height:12px; display:inline-block; margin-top:-2px;  margin-left:5px;}
+.ly_mylistbox{padding:10px 0px 20px 0;}
+.ly_mylistbox li{ margin-top:10px;  border-top: 1px solid #dedede;border-bottom: 1px solid #dedede;background:#FFF; padding:12px 3%; position:relative}
+.ly_mylistbox li a p i{ font-size:20px; color:#e73825}
+.ly_mylistbox li a p{ line-height:30px; font-size:14px; color:#333333; margin-top:15px; color:#666666}
+.ly_mylistbox li a p em{ font-size:17px; }
+.ly_mylistbox li a p  span{color:#333333; margin-right:10px;}
+.ly_mylistbox li a  h3{ line-height:15px; font-size:16px;color:#333333;}
+.ly_mylistbox li a  h3 i{ width:15px; height:15px; display:block; float:left; margin-right:7px; }
+.ly_mylistbox li a  h3 i img{ height:15px;}
+.ly_mylistbox li a { display:block}
+/*=======银行卡管理======*/
+.ly_bankbox{ margin: 30px 3% 0px 3%; border: 1px solid #dedede; background:#FFF; padding:12px; line-height:26px; font-size:16px; color:#333; }
+.ly_bankadd{ line-height:42px; padding-top:3px; color:#e73825; font-size:16px; margin-left:3%}
+.ly_bankli{ margin: 0px 3% 5px 3%;}
+.ly_bankdiv{ height:46px; border:1px solid #dedede; background:#FFF; line-height:46px; font-size:16px;}
+.ly_bankdiv i{ margin: 0px 8px;}
+.ly_bankdiv input{ line-height:36px; height:36px; width:60%; border:none; background:none;font-size:16px; }
+.ly_bankli li{ margin-bottom:10px;}
+/*======债权转让======*/
+.ly_myturnbox{padding-top:10px;}
+.ly_myturnbox li{ margin-top:10px;  border-top: 1px solid #dedede;border-bottom: 1px solid #dedede;background:#FFF; }
+.ly_myturnbox li a p i{ font-size:20px; color:#e73825}
+.ly_myturnbox li a p{ line-height:30px; font-size:14px; color:#333333; margin-top:15px; color:#666666}
+.ly_myturnbox li a p em{ font-size:17px; }
+.ly_turnbox{ padding: 12px 3%;}
+.ly_myturnbox li a p  span{color:#333333; margin-right:10px;}
+.ly_myturnbox li a  h3{ line-height:15px; font-size:16px;color:#333333;}
+.ly_myturnbox li a { display:block}
+.ly_myturntime{background:#FFF; padding:0 3%; border-top: 1px solid #dedede; height:40px; line-height:40px; color:#666666; font-size:14px;}
+.ly_myturntime i{ background-position: -48px -41px; width:15px; height:15px; display:block; float:left; margin: 13px 7px 0 0;}
+.ly_myturntime em{ color:#333;}
+/*======债权转让详情======*/
+.ly_turnmore{ background:#FFF;border-top: 1px solid #dedede; margin-top:10px;}
+.ly_turnmore p{ padding: 12px 3%;font-size:14px; color:#666666; line-height:26px;}
+.ly_turnmore p.ly_turncopyright{border-bottom: 1px solid #dedede; }
+.ly_turnmore p em{ color:#333;}
+.ly_turnmore i{ display:inline-block; width:15px; height:15px; vertical-align:middle}
+.ly_turnmore i img{ height:15px;}
+/*======站内信列表====*/
+.ly_msglist{margin-top: 30px ;border-bottom: 1px solid #dedede;}
+.ly_msglist li{ border-top: 1px solid #dedede;background:#FFF; padding: 9px 3%; overflow:hidden }
+.ly_msgleft{ width:5%; float:left}
+.ly_msgleft i{ width:8px; height:8px; background:#e73825; border-radius:50%; display:block; margin-top:11px;}
+.ly_msgright{ width:95%; float:right}
+.ly_msglist a h3{ font-size:17px; height:30px; line-height:30px; overflow:hidden}
+.ly_msglist a h3 span{ float:right; font-size:12px; color:#666666}
+.ly_msglist a  p{ line-height:20px; font-size:14px; color:#666666; height:40px; overflow:hidden}
+
+/*======账户中心======*/
+.s_accounttop{ padding:13px 3%; border-bottom: 1px solid #dedede; background:#FFF;}
+.s_user{display: table; width: 100%; color: #666;}
+.s_user .userl{display: table-cell; vertical-align: middle; width: 5.2em;}
+.s_user .userl img{height: 5.2em;  border-radius:50%;}
+.s_user .userr{display: table-cell; vertical-align: middle; line-height: 2em; padding-left: 1em;}
+.s_user .userlink{margin-top:.4em; font-size: .7em; line-height: 1;}
+.s_user .userlink a{margin-right: 1.5em; vertical-align: middle; display: flex; float:left;width: 31px; height: 31px;  }
+.s_user .userlink .ico01{background-position: -90px -41px; position: relative;}
+.s_user .userlink .ico02{ background-position: -125px -41px;}
+.s_user .userr span{font-size: 1.2em; line-height:1.5em; color:#333333}
+.s_user .userlink .num{position: absolute; border-radius: 50%; background:#ff6600;  padding:.3em; top:.6em; right:0em;}
+.ly_reblist{background:#fff; border-bottom:1px solid #e6e6e6; padding: 0px 3%;  overflow:hidden; clear:none}
+.ly_rebtxtdiv{padding: 0.5em 3%;background:#fff; border-bottom:1px solid #e6e6e6; }
+.ly_rebtxtdiv p{font-size:14px;  line-height: 1.5em; color:#999999}
+.ly_rebtxtdiv em{font-size: 20px; line-height: 2em; color:#e73825;}
+.ly_reblist li{ width:50%; float:left; padding:0.5em 0;}
+.ly_reblist li p{font-size:14px; line-height: 1.5em; color:#999999}
+.ly_reblist li em{font-size: 18px; line-height: 2em; color:#333}
+.ly_butmit{padding: 1.5em 4.6875%;overflow:hidden; clear:none; }
+.ly_butmit a{  display:block;width: 40%; height: 3em; color: #fff; border-radius: 5px; text-align:center; line-height:3em}
+.ly_butmit a.leftbntmit{ background:#e73825; float:left}
+.ly_butmit a.rightbntmit{ background:#2d8ad1; float:right}
+.ly_accountlink{background:#fff; border-top:1px solid #e6e6e6;}
+.ly_accountlink li{border-bottom: 1px solid #e6e6e6; height:50px; line-height:50px;padding:0px 3%; font-size:17px}
+.ly_accountlink li a{ display:block; }
+.ly_accountlink li i{ display:block;  }
+.ly_accountlink li .ico01{background-position: 0px -98px;height: 13px;width:19px; float:left; margin: 19px 5px 0 0;}
+.ly_accountlink li .ico02{background-position: -25px -97px;height: 16px;width:17px; float:left; margin:16px 8px 0 0;}
+.ly_accountlink li .ico03{background-position: -46px -97px;  height: 17px; width:14px; float:left; margin:16px 12px 0 0;}
+.ly_accountlink li .ico04{background-position: -67px -97px;height: 16px; width:16px; float:left; margin:17px 7px 0 0;}
+.ly_accountlink li .ico05{background-position: -87px -97px; height: 16px;width:16px; float:left; margin:17px 8px 0 0;}
+.ly_accountlink li .ico06{background-position: -108px -97px; height: 15px;width:15px; float:left; margin:17px 8px 0 0;}
+.ly_accountlink li .ico07{background-position: -127px -97px; height: 18px;width:17px; float:left; margin:17px 8px 0 0;}
+.ly_accountlink li .ico08{background-position: -149px -97px; height: 16px;width:17px; float:left; margin:17px 8px 0 0;}
+.ly_accountlink li span i{width:16px ;  height: 19px; display:block; float:right; background-position:  -173px -97px; margin-top:16px;}
+.ly_loadexit{display: block; width: 94%; height: 3em; font-size:1.2em;text-align:center; line-height:3em; color: #fff; border-radius: 5px; background:#e73825; margin:1.2em auto ;}
+
+/*===9.2月新增css====*/
+.ly-mysel-box{ width:94%;margin:20px auto ;}
+.ly-box-updown{border-top: 1px solid #e6e6e6; margin-bottom: 20px;}
+.ly-box-updown li{ background:#FFF;  border-bottom: 1px solid #e6e6e6; line-height:44px; font-size:16px; color:#333333;}
+.ly-box-updown li em{ color:#e73825; margin-left:5%;}
+.ly-box-updown li span{ float:right}
+.ly-box-updown li span i{ display:inline-block; width:7px; height:13px; margin:0px 0 0 8px; background-position: -19px -67px; vertical-align:middle}
+.ly-box-updown li span a{ color:#999999; font-size:15px;}
+.ly-regbox{ line-height: 26px; padding: 5px 3% 8px 3%; border-top: 1px solid #e6e6e6; display: none; font-size: 15px;}
+.ly-regbox-ibox{ padding:  0px 3%;}
+.ly-box-updown li span i.iready-box{background-position: -28px -67px;width:13px; height:7px; }
+.ly_borrowtime i.moushrmb{ background-position: 0px -120px; }
+.ly_turnbox  table{line-height:30px; font-size:14px; color:#333333; margin-top:15px; color:#666666}
+.ly_turnbox table span{color:#333333; margin-right:10px;}
+.ly_myselbox i.fast{ background-position: -48px -63px;}
+.ly_myselbox i.second{ background-position: -57px -63px;}
+.windivbox{ background:#000; opacity: 0.6; width: 100%; position: absolute;left: 0px; top: 0px; z-index: 999; display: none;}
+.windivwrap{ width: 84%; background: #FFF; position:fixed; display: none; z-index: 1000}
+.windivmian{ width: 84%; margin: auto; position: relative; padding-top: 10px; }
+.windivmian h3{ font-size: 16px; line-height: 50px; height: 50px; overflow: hidden;}
+.windivmian h3 em{ color: #e73825}
+.windivlist>li{ height:44px; background:#FFF;  border-bottom: 1px solid #e6e6e6; line-height:44px; padding:0px 3%; font-size:16px; color:#333333;}
+.windivlist>li span{ float:right; color: #666666}
+.windivlist a{ display:block;color:#333333;}
+.windivlist>li span i{ display:inline-block; width:7px; height:13px; margin:0px 0 0 8px; background-position: -19px -67px; vertical-align:middle}
+.windivlist{ border:  1px solid #dedede; border-bottom: none; }
+.windivlist>li  em{ font-size: 14px; color: #666666}
+.regular-radio {
+	display: none;
+}
+.regular-radio + label {
+	-webkit-appearance: none;
+	background-color: #FFF;
+	border: 1px solid #e73825;
+
+	padding: 9px;
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.regular-radio:checked + label:after {
+	content: ' ';
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	background: #e73825;
+
+	text-shadow: 0px;
+	left: 3px;
+
+}
+.regular-radio:checked + label {
+	background-color: #e73825;
+
+	border: 1px solid #e73825;
+	}
+.wincopyright{ color: #e73825; line-height: 20px; font-size: 12px; margin-top: 10px;}
+.wincopybox{ font-size: 16px;  line-height: 26px; color: #333333;margin-top: 10px;}
+.wincopybox em{color: #e73825;  }
+.wincopybnt{ height:50px;background:#e73825; line-height:50px; text-align:center; font-size:18px; color:#FFF; display:block; border-radius:5px; margin:15px 0%;}
+.winclose{ position: absolute;right: -6%; top: 10px; background-position: 0px -146px; width: 10px;  height: 10px;}
+.ly_myselbox li.last{  width:25%}
+.windivlist li{ display:none}
+
+/*===9.8==*/
+.ly_set li em.ly_setbrack{ color:#333;}
+/*====完善资料===*/
+.s_userdata{padding:1em 4.6875%; color: #666; background:#fff; border-top:1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; margin-top:1em;}
+.s_userdata .text{border:1px solid #ccc; height:2em;}
+.s_userdata i{color: #ed7030;}
+.s_userdata li{margin-bottom: .833em;}
+.s_userdata .textw1{width: 70%;}
+.s_userdata .textw2{width:28%;}
+.s_userdata .textw3{width:66%;}
+.s_userdata .textw4{width:40%;}
+.s_userdata .textw5{width:28%;}
+.s_userdata .getmsg{width: 20%; min-width: 5.5em; color: #FFF; margin-left: 2%; height: 2em; background:#e73825; border:1px solid #e73825;}
+.s_userdata .savebtn{width: 30%; height: 2em; display: block; margin:1.5em auto 0; border:1px solid #e73825; background:#e73825; color: #FFF;}
+
+/*===9.8===*/
+.ly_share{ margin: 30px 3% 0 3%;}
+.ly_sharemsg{font-size: 14px; line-height: 20px; color: #e73825; }
+.ly_shareweixin{ width: 48%; margin:30px  auto 0 auto;}
+.ly_shareweixin img{ width: 100%; }
+.ly_shareweixin span{text-align: center; line-height: 30px; display: block;}
+.ly_set li.ly_imgboxsrc{ height: auto;}
+.ly_imgboxsrc{ display: none;}

@@ -1,0 +1,166 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta content="telephone=no" name="format-detection">
+<meta name="flexible" content="initial-dpr=2,maximum-dpr=3;">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<title>鑫悦贷</title>
+</head>
+
+<body class="bodybg">
+    <header class="l-top-nav mb10">
+        <a class="l-inquiry-btn iconfont" ontouchstart="wylc_order()">&#xe60d;</a>
+        <span class="l-inquiry-input">
+            <input type="text" placeholder="请输入借款标题/借款金额/年利率">
+            <i class="l-inquiry-icon iconfont">&#xe603;</i>
+        </span>
+        <a href="账户中心.html" class="l-mem-icon iconfont">&#xe600;</a>
+        <ul class="l-wylc-select">
+            <li class="l-wylc-scircle" ontouchstart="inquiry_area($(this))">
+                招标中
+                <span class="l-wylc-circle">
+                    <i class="l-wylc-circle2"></i>
+                </span>
+            </li>
+            <li ontouchstart="inquiry_area($(this))">
+                还款中
+                <span class="l-wylc-circle">
+                    <i class="l-wylc-circle2"></i>
+                </span>
+            </li>
+            <li ontouchstart="inquiry_area($(this))">
+                已还完
+                <span class="l-wylc-circle">
+                    <i class="l-wylc-circle2"></i>
+                </span>
+            </li>
+        </ul>
+    </header>
+    <section class="popupbg" ontouchstart="inquiry_close()"></section>
+    <a href="借款标详情.html" title="" target="" class="l-jkb-list">
+        <h2 class="l-jkb-tinfo">
+            <img src="images/icon_xin.png" alt="" title="" width="14" height="14">
+            <span class="l-jkb-title">净水设备销售店进货周转</span>
+        </h2>
+        <span class="l-jkb-data">
+            <dl class="l-jkb-data1">
+                <dt class="l-wylc-title">借款编号</dt>
+                <dd class="l-wylc-data">J1256</dd>
+            </dl>
+            <dl class="l-jkb-data2">
+                <dt class="l-wylc-title">借款金额</dt>
+                <dd class="l-wylc-data">50,000.00 </dd>
+            </dl>
+            <dl class="l-jkb-data3">
+                <dt class="l-wylc-title">年利率</dt>
+                <dd class="l-wylc-data l-wylc-rate">12<i>%</i></dd>
+            </dl>
+        </span>
+        <p class="l-jkb-interest">
+            <span>投标本金：<i class="l-jkb-sum">2000.00</i></span>
+            <span>本息合计：<i class="l-jkb-sum">500,320.00</i></span>
+        </p>
+    </a>
+    <a href="借款标详情.html" title="" target="" class="l-jkb-list">
+        <h2 class="l-jkb-tinfo">
+            <img src="images/icon_miao.png" alt="" title="" width="14" height="14">
+            <span class="l-jkb-title">净水设备销售店进货周转</span>
+        </h2>
+        <span class="l-jkb-data">
+            <dl class="l-jkb-data1">
+                <dt class="l-wylc-title">借款编号</dt>
+                <dd class="l-wylc-data">J1256</dd>
+            </dl>
+            <dl class="l-jkb-data2">
+                <dt class="l-wylc-title">借款金额</dt>
+                <dd class="l-wylc-data">50,000.00 </dd>
+            </dl>
+            <dl class="l-jkb-data3">
+                <dt class="l-wylc-title">年利率</dt>
+                <dd class="l-wylc-data l-wylc-rate">12<i>%</i></dd>
+            </dl>
+        </span>
+        <p class="l-jkb-interest">
+            <span>投标本金：<i class="l-jkb-sum">2000.00</i></span>
+            <span>本息合计：<i class="l-jkb-sum">500,320.00</i></span>
+        </p>
+    </a>
+    <a href="借款标详情.html" title="" target="" class="l-jkb-list">
+        <h2 class="l-jkb-tinfo">
+            <img src="images/icon_jing.png" alt="" title="" width="14" height="14">
+            <span class="l-jkb-title">净水设备销售店进货周转</span>
+        </h2>
+        <span class="l-jkb-data">
+            <dl class="l-jkb-data1">
+                <dt class="l-wylc-title">借款编号</dt>
+                <dd class="l-wylc-data">J1256</dd>
+            </dl>
+            <dl class="l-jkb-data2">
+                <dt class="l-wylc-title">借款金额</dt>
+                <dd class="l-wylc-data">50,000.00 </dd>
+            </dl>
+            <dl class="l-jkb-data3">
+                <dt class="l-wylc-title">年利率</dt>
+                <dd class="l-wylc-data l-wylc-rate">12<i>%</i></dd>
+            </dl>
+        </span>
+        <p class="l-jkb-interest">
+            <span>投标本金：<i class="l-jkb-sum">2000.00</i></span>
+            <span>本息合计：<i class="l-jkb-sum">500,320.00</i></span>
+        </p>
+    </a>
+    <a href="借款标详情.html" title="" target="" class="l-jkb-list">
+        <h2 class="l-jkb-tinfo">
+            <img src="images/icon_bao.png" alt="" title="" width="14" height="14">
+            <span class="l-jkb-title">净水设备销售店进货周转</span>
+        </h2>
+        <span class="l-jkb-data">
+            <dl class="l-jkb-data1">
+                <dt class="l-wylc-title">借款编号</dt>
+                <dd class="l-wylc-data">J1256</dd>
+            </dl>
+            <dl class="l-jkb-data2">
+                <dt class="l-wylc-title">借款金额</dt>
+                <dd class="l-wylc-data">50,000.00 </dd>
+            </dl>
+            <dl class="l-jkb-data3">
+                <dt class="l-wylc-title">年利率</dt>
+                <dd class="l-wylc-data l-wylc-rate">12<i>%</i></dd>
+            </dl>
+        </span>
+        <p class="l-jkb-interest">
+            <span>投标本金：<i class="l-jkb-sum">2000.00</i></span>
+            <span>本息合计：<i class="l-jkb-sum">500,320.00</i></span>
+        </p>
+    </a>
+
+    <script type="text/javascript">
+        function wylc_order(){
+            var inquiry_content =$(".l-wylc-select");         
+            if(inquiry_content.is(":hidden")){
+                $(".popupbg").show();
+                inquiry_content.slideDown();
+            }
+            else{
+                inquiry_content.slideUp();
+                $(".popupbg").hide();
+            } 
+        }
+        function inquiry_close(){
+            $(".l-wylc-select").hide();
+            $(".popupbg").hide();
+        }
+        function inquiry_area(e){
+            e.addClass('l-wylc-scircle').siblings().removeClass('l-wylc-scircle');
+            e.parent().delay(600).slideUp(function(){
+                e.parents(".l-top-nav").next(".popupbg").hide();
+            });
+        }
+    </script>
+</body>
+</html>

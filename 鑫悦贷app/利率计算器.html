@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta content="telephone=no" name="format-detection">
+<meta name="flexible" content="initial-dpr=2,maximum-dpr=3;">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<title></title>
+</head>
+
+<body>
+
+    <header class="ly_head">
+    	<span>
+        	<a href="注册.html"><i class="icotic ly_usereg"></i></a>
+        </span>
+        <h2>利率计算器</h2>
+    </header>
+	<div class="s_centerbox">
+		<table width="100%" cellpadding="0" cellspacing="0" class="s_countertab">
+			<tr>
+				<td align="right" width="32%">借款金额：</td>
+				<td width="68%">
+					<input type="text" class="border" />&nbsp;&nbsp;元
+				</td>
+			</tr>
+			<tr>
+				<td align="right">年利率：</td>
+				<td>
+					<input type="text" class="border" />&nbsp;&nbsp;%
+				</td>
+			</tr>
+			<tr>
+				<td align="right">投标期限：</td>
+				<td>
+					<input type="text" class="border" />&nbsp;&nbsp;月
+				</td>
+			</tr>
+			<tr>
+				<td align="right">还款方式：</td>
+				<td>
+					<select class="border width02">
+						<option>按月付息，到期还本</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">投标奖励：</td>
+				<td>
+					<span class="s_inputout"><input type="text" class="border width03" /><label>元</label></span>
+					<span class="s_inputout"><input type="text" class="border width04" /><label>%</label></span>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="s_counterbtn">
+		<input type="button" value="计算" />
+	</div>
+	<div class="s_counterout">
+		<h3>计算结果</h3>
+		<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td align="right" width="33%">投标总额：</td>
+				<td width="42%" align="center">100,000.00</td>
+				<td width="25%">元</td>
+			</tr>
+			<tr>
+				<td align="right">年化收益：</td>
+				<td align="center">1.00</td>
+				<td>%</td>
+			</tr>
+			<tr>
+				<td align="right">总计利息：</td>
+				<td align="center">34,002.21</td>
+				<td>元</td>
+			</tr>
+			<tr>
+				<td align="right">投标奖励：</td>
+				<td align="center">34,002.21</td>
+				<td>元</td>
+			</tr>
+			<tr>
+				<td align="right">每月还款：</td>
+				<td align="center">102,006.60</td>
+				<td>元</td>
+			</tr>
+		</table>
+		<div class="s_counterall">
+			总收益(扣除10%管理费，共计：2.48元):<br/><strong>101352.23</strong>元
+		</div>
+	</div>
+</body>
+</html>
