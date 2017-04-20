@@ -1,0 +1,143 @@
+.block {
+    position: relative;
+
+    display: inline-block;
+    overflow: hidden;
+    width: 10em;
+    height: 10em;
+
+    vertical-align: middle;
+
+    -webkit-transform: translateZ(0);
+}
+
+
+.block_hoverer {
+    position: absolute;
+    z-index: 1;
+
+    width: 71%;
+    height: 71%;
+
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+/*No.1*/
+/*开始写代码，请定位hover后将显示的模块位置，请兼容Firefox、Safari、Chrome、Opera浏览器*/
+.block_hoverer:nth-child(1) {
+    top: 0;
+    right: 0;
+    opacity:0;
+    -webkit-transform-origin: 100% 0;
+       -moz-transform-origin: 100% 0;
+         -o-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+}
+.block_hoverer:nth-child(2) {
+    bottom: 0;
+    right: 0;
+    opacity:0;
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+}
+.block_hoverer:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    opacity:0;
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.block_hoverer:nth-child(4) {
+    top: 0;
+    left: 0;
+    opacity:0;
+    -webkit-transform-origin: 0 0;
+       -moz-transform-origin: 0 0;
+         -o-transform-origin: 0 0;
+            transform-origin: 0 0;
+}
+
+.block_hoverer:hover {
+    z-index: 9;
+        
+    width: 100%;
+    height: 100%;
+
+    -webkit-transform: none;
+       -moz-transform: none;
+         -o-transform: none;
+            transform: none;
+
+    line-height: 10em;
+    text-align:center;
+    opacity:1;
+}
+/*end_code*/
+
+.block_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    text-align: center;
+    line-height: 10em;
+
+    background: #333;
+    color: #FFF;
+    
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+
+    -webkit-box-shadow: 0 -10em 0 0 red, 10em 0 0 0 blue, 0 10em 0 0 lime, -10em 0 0 0 orange;
+       -moz-box-shadow: 0 -10em 0 0 red, 10em 0 0 0 blue, 0 10em 0 0 lime, -10em 0 0 0 orange;
+            box-shadow: 0 -10em 0 0 red, 10em 0 0 0 blue, 0 10em 0 0 lime, -10em 0 0 0 orange;
+}
+
+/*No.2*/
+/*开始写代码，请实现hover后的动画效果，请兼容Firefox、Safari、Chrome、Opera浏览器*/
+.block_hoverer:nth-child(1):hover ~ .block_content  {
+     -webkit-transform: translate(0, 100%);
+        -moz-transform: translate(0, 100%);
+          -o-transform: translate(0, 100%);
+             transform: translate(0, 100%);
+}
+.block_hoverer:nth-child(2):hover ~ .block_content  {
+     -webkit-transform: translate(-100%, 0);
+        -moz-transform: translate(-100%, 0);
+          -o-transform: translate(-100%, 0);
+             transform: translate(-100%, 0);
+}
+.block_hoverer:nth-child(3):hover ~ .block_content  {
+     -webkit-transform: translate(0, -100%);
+        -moz-transform: translate(0, -100%);
+          -o-transform: translate(0, -100%);
+             transform: translate(0, -100%);
+}
+.block_hoverer:nth-child(4):hover ~ .block_content  {
+     -webkit-transform: translate(100%, 0);
+        -moz-transform: translate(100%, 0);
+          -o-transform: translate(100%, 0);
+             transform: translate(100%, 0);
+}
+
+/*end_code*/
+
+body {
+    padding: 2em;
+    font: 16px/1.5 "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+}

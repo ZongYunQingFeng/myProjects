@@ -1,0 +1,41 @@
+div
+{
+    width:0px;
+    height:0px;
+    /*No.1*/
+    /*开始写代码，请实现等边三角形，以及制定动画效果，请兼容Firefox、Safari、Chrome、Opera浏览器*/
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid red;
+    position:absolute;
+    -webkit-animation: move 5s infinite;
+       -moz-animation: move 5s infinite;
+         -o-animation: move 5s infinite;
+            animation: move 5s infinite;
+
+    /*end_code*/
+}
+/*No.2*/
+/*开始写代码，请实现详细的动画效果，请兼容Firefox、Safari、Chrome、Opera浏览器*/
+@keyframes followMove {
+    0%{border-color:red;}
+    25%{border-color: yellow;}
+    50%{border-color:blue;}
+    75%{border-color:green;}
+    100%{border-color:red;}
+}
+.box{
+    -webkit-animation:followMove 5s infinite;
+       -moz-animation:followMove 5s infinite;
+         -o-animation:followMove 5s infinite;
+            animation:followMove 5s infinite;
+    width:200px;height:200px;position:relative;border:1px solid red;margin: 0 auto;
+}
+@keyframes move {
+    0%{left:-50%;top:0;border-bottom-color: red;}
+    25%{left:50%;top:0;border-bottom-color: yellow;}
+    50%{left:50%;top:100%;border-bottom-color: blue;}
+    75%{left:-50%;top:100%;border-bottom-color: green;}
+    100%{left:-50%;top:0;border-bottom-color: red;}
+}
+/*end_code*/
